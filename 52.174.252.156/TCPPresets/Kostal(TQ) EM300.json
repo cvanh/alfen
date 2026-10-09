@@ -1,0 +1,44 @@
+{
+    "Name": "Kostal(TQ) EM300",
+    "Version": "V1.1",
+    "WordOrder": "highToLow",
+    "SampleIntervalMs": 2000,
+    "Regmap": [
+        {
+            "Key": "CURRENT_L1",
+            "RegNum": 60,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_L2",
+            "RegNum": 100,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_L3",
+            "RegNum": 140,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "POWER_REAL_L1",
+            "RegNum": 40,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -1
+        },
+        {
+            "Key": "POWER_REAL_L2",
+            "RegNum": 80,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -1
+        },
+        {
+            "Key": "POWER_REAL_L3",
+            "RegNum": 120,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -1
+        }
+    ]
+}

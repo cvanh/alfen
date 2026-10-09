@@ -1,0 +1,44 @@
+{
+  "Name": "Carlo Gavazzi Modbus",
+  "Version": "V1.0",
+  "SampleIntervalMs": 2000,
+  "Regmap": [
+    {
+      "Key": "CURRENT_L1",
+	"RegNum": 12,
+	"DataType": "SIGNED16",
+  	"ScaleE": -3
+    },
+    {
+      "Key": "CURRENT_L2",
+	"RegNum": 14,
+	"DataType": "SIGNED16",
+  	"ScaleE": -3
+    },
+	{
+      "Key": "CURRENT_L3",
+	"RegNum": 16,
+	"DataType": "SIGNED16",
+  	"ScaleE": -3
+    },
+	{
+      "Key": "POWER_REAL_L1",
+      "RegNum": 23326,
+      "DataType": "SIGNED16",
+      "ScaleE": -1
+    },  
+    {
+      "Key": "POWER_REAL_L2",
+      "RegNum": 23328,
+      "DataType": "SIGNED16",
+      "ScaleE": -1
+    },
+    {
+      "Key": "POWER_REAL_L3",
+      "RegNum": 23330,
+      "DataType": "SIGNED16",
+      "ScaleE": -1
+    },
+    
+  ]
+}

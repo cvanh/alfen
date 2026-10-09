@@ -1,0 +1,97 @@
+{
+  "Name": "Siemens PAC2200",
+  "Version": "V2.0",
+  "SampleIntervalMs": 2000,
+  "Regmap": [
+    {
+      "Key": "VOLTAGE_L1N",
+      "RegNum": 1,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "VOLTAGE_L2N",
+      "RegNum": 3,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "VOLTAGE_L3N",
+      "RegNum": 5,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "VOLTAGE_L1L2",
+      "RegNum": 7,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "VOLTAGE_L2L3",
+      "RegNum": 9,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "VOLTAGE_L3L1",
+      "RegNum": 11,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "CURRENT_L1",
+      "RegNum": 30017,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "CURRENT_L2",
+      "RegNum": 30019,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "CURRENT_L3",
+      "RegNum": 30021,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "POWER_REAL_L1",
+      "RegNum": 30029,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },  
+    {
+      "Key": "POWER_REAL_L2",
+      "RegNum": 30031,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "POWER_REAL_L3",
+      "RegNum": 30033,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "POWER_REACTIVE_L1",
+      "RegNum": 31,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "POWER_REACTIVE_L2",
+      "RegNum": 33,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    },
+    {
+      "Key": "POWER_REACTIVE_L3",
+      "RegNum": 35,
+      "DataType": "FLOAT32",
+      "ScaleE": 0
+    }
+  ]
+}

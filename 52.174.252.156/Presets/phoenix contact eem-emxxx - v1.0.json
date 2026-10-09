@@ -1,0 +1,44 @@
+{
+  "Name": "Phoenix Contact EEM-EMXXX",
+  "Version": "V1.0",
+  "SampleIntervalMs": 2000,
+  "Regmap": [
+    {
+      "Key": "CURRENT_L1",
+	"RegNum": 50528,
+	"DataType": "UNSIGNED32",
+  	"ScaleE": -3
+    },
+    {
+      "Key": "CURRENT_L2",
+	"RegNum": 50530,
+	"DataType": "UNSIGNED32",
+  	"ScaleE": -3
+    },
+	{
+      "Key": "CURRENT_L3",
+	"RegNum": 50532,
+	"DataType": "UNSIGNED32",
+  	"ScaleE": -3
+    },
+	{
+      "Key": "POWER_REAL_L1",
+      "RegNum": 50544,
+      "DataType": "SIGNED32",
+      "ScaleE": -1
+    },  
+    {
+      "Key": "POWER_REAL_L2",
+      "RegNum": 50546,
+      "DataType": "SIGNED32",
+      "ScaleE": -1
+    },
+    {
+      "Key": "POWER_REAL_L3",
+      "RegNum": 50548,
+      "DataType": "SIGNED32",
+      "ScaleE": -1
+    },
+    
+  ]
+}

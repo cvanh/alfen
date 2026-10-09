@@ -1,0 +1,2 @@
+DO NOT REMOVE THIS FILE!
+File is used to check the ftp connection and download capability from the client.

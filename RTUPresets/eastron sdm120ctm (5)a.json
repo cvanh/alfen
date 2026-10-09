@@ -1,0 +1,56 @@
+{
+    "Name": "eastron sdm120ctm (5)a",
+    "Version": "V1.0",
+    "Address": 1,
+    "Parity": "none",
+    "Baudrate": 9600,
+    "WordOrder": "highToLow",
+    "UpdateTime": 5000,
+    "ReadTimeout": 200,
+    "FunctionCode": "inputRegisters",
+    "SampleIntervalMs": 2000,
+    "Regmap": [
+        {
+            "Key": "CURRENT_L1",
+            "RegNum": 6,
+            "DataType": "FLOAT32",
+            "ScaleE": 2
+        },
+        {
+            "Key": "VOLTAGE_L1N",
+            "RegNum": 0,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REAL_L1",
+            "RegNum": 12,
+            "DataType": "FLOAT32",
+            "ScaleE": 2
+        },
+        {
+            "Key": "POWER_APPARENT_L1",
+            "RegNum": 18,
+            "DataType": "FLOAT32",
+            "ScaleE": 2
+        },
+        {
+            "Key": "POWER_REACTIVE_L1",
+            "RegNum": 24,
+            "DataType": "FLOAT32",
+            "ScaleE": 2
+        },
+        {
+            "Key": "COSPHI_L1",
+            "RegNum": 30,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "FREQUENCY",
+            "RegNum": 70,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        }
+    ]
+}

@@ -1,0 +1,170 @@
+{
+    "Name": "Socomec countis E27",
+    "Version": "V1.3",
+    "WordOrder": "lowToHigh",
+    "SampleIntervalMs": 2000,
+    "Regmap": [
+        {
+            "Key": "VOLTAGE_L1L2",
+            "RegNum": 50514,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -2
+        },
+        {
+            "Key": "VOLTAGE_L2L3",
+            "RegNum": 50516,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -2
+        },
+        {
+            "Key": "VOLTAGE_L3L1",
+            "RegNum": 50518,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -2
+        },
+        {
+            "Key": "VOLTAGE_L1N",
+            "RegNum": 50520,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -2
+        },
+        {
+            "Key": "VOLTAGE_L2N",
+            "RegNum": 50522,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -2
+        },
+        {
+            "Key": "VOLTAGE_L3N",
+            "RegNum": 50524,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -2
+        },
+        {
+            "Key": "FREQUENCY",
+            "RegNum": 50526,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -2
+        },
+        {
+            "Key": "CURRENT_L1",
+            "RegNum": 50528,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_L2",
+            "RegNum": 50530,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_L3",
+            "RegNum": 50532,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_N",
+            "RegNum": 50534,
+            "DataType": "UNSIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "POWER_REAL_SUM",
+            "RegNum": 50536,
+            "DataType": "SIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REACTIVE_SUM",
+            "RegNum": 50538,
+            "DataType": "SIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_APPARENT_SUM",
+            "RegNum": 50540,
+            "DataType": "UNSIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REAL_L1",
+            "RegNum": 50544,
+            "DataType": "SIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REAL_L2",
+            "RegNum": 50546,
+            "DataType": "SIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REAL_L3",
+            "RegNum": 50548,
+            "DataType": "SIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REACTIVE_L1",
+            "RegNum": 50550,
+            "DataType": "SIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REACTIVE_L2",
+            "RegNum": 50552,
+            "DataType": "SIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REACTIVE_L3",
+            "RegNum": 50554,
+            "DataType": "SIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_APPARENT_L1",
+            "RegNum": 50556,
+            "DataType": "UNSIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_APPARENT_L2",
+            "RegNum": 50558,
+            "DataType": "UNSIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_APPARENT_L3",
+            "RegNum": 50560,
+            "DataType": "UNSIGNED32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "COSPHI_L1",
+            "RegNum": 50562,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "COSPHI_L2",
+            "RegNum": 50564,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "COSPHI_L3",
+            "RegNum": 50566,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "COSPHI_SUM",
+            "RegNum": 50542,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        }
+    ]
+}

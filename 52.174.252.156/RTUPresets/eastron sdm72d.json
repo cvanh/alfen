@@ -1,0 +1,169 @@
+{
+    "Name": "eastron sdm72d",
+    "Version": "V1.0",
+    "Address": 1,
+    "Parity": "none",
+    "Baudrate": 9600,
+    "WordOrder": "highToLow",
+    "UpdateTime": 5000,
+    "ReadTimeout": 200,
+    "FunctionCode": "holdingRegisters",
+    "SampleIntervalMs": 2000,
+    "Regmap": [
+        {
+            "Key": "CURRENT_L1",
+            "RegNum": 6,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "CURRENT_L2",
+            "RegNum": 8,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "CURRENT_L3",
+            "RegNum": 10,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "CURRENT_N",
+            "RegNum": 224,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "VOLTAGE_L1N",
+            "RegNum": 0,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "VOLTAGE_L2N",
+            "RegNum": 2,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "VOLTAGE_L3N",
+            "RegNum": 4,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "VOLTAGE_L1L2",
+            "RegNum": 200,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },        {
+            "Key": "VOLTAGE_L2L3",
+            "RegNum": 202,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "VOLTAGE_L3L1",
+            "RegNum": 204,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REAL_L1",
+            "RegNum": 12,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REAL_L2",
+            "RegNum": 14,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REAL_L3",
+            "RegNum": 16,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REAL_SUM",
+            "RegNum": 52,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_APPARENT_L1",
+            "RegNum": 18,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_APPARENT_L2",
+            "RegNum": 20,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_APPARENT_L3",
+            "RegNum": 22,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_APPARENT_SUM",
+            "RegNum": 56,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REACTIVE_L1",
+            "RegNum": 24,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REACTIVE_L2",
+            "RegNum": 26,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REACTIVE_L3",
+            "RegNum": 28,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "POWER_REACTIVE_SUM",
+            "RegNum": 60,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "COSPHI_L1",
+            "RegNum": 30,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "COSPHI_L2",
+            "RegNum": 32,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "COSPHI_L3",
+            "RegNum": 34,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        },
+        {
+            "Key": "FREQUENCY",
+            "RegNum": 70,
+            "DataType": "FLOAT32",
+            "ScaleE": 0
+        }
+    ]
+}

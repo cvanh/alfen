@@ -1,0 +1,44 @@
+{
+    "Name": "Algodue UEM1P5-4D",
+    "Version": "V1.1",
+    "WordOrder": "HighToLow",
+    "SampleIntervalMs": 2000,
+    "Regmap": [
+        {
+            "Key": "CURRENT_L1",
+            "RegNum": 14,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_L2",
+            "RegNum": 16,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_L3",
+            "RegNum": 18,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "POWER_REAL_L1",
+            "RegNum": 28,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "POWER_REAL_L2",
+            "RegNum": 31,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "POWER_REAL_L3",
+            "RegNum": 34,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        }
+    ]
+}

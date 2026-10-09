@@ -1,0 +1,44 @@
+{
+    "Name": "EMU Pro II 3_x",
+    "Version": "V1.1",
+    "WordOrder": "highToLow",
+    "SampleIntervalMs": 2000,
+    "Regmap": [
+        {
+            "Key": "CURRENT_L1",
+            "RegNum": 4591,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_L2",
+            "RegNum": 4593,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "CURRENT_L3",
+            "RegNum": 4595,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "POWER_REAL_L1",
+            "RegNum": 4521,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "POWER_REAL_L2",
+            "RegNum": 4523,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        },
+        {
+            "Key": "POWER_REAL_L3",
+            "RegNum": 4525,
+            "DataType": "SIGNED32",
+            "ScaleE": -3
+        }
+    ]
+}

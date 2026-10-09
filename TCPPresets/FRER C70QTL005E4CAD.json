@@ -1,0 +1,44 @@
+{
+    "Name": "FRER C70QTL005E4CAD",
+    "Version": "V1.1",
+    "WordOrder": "highToLow",
+    "SampleIntervalMs": 2000,
+    "Regmap": [
+        {
+            "Key": "CURRENT_L1",
+            "RegNum": 4110,
+            "DataType": "FLOAT32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "CURRENT_L2",
+            "RegNum": 4112,
+            "DataType": "FLOAT32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "CURRENT_L3",
+            "RegNum": 4114,
+            "DataType": "FLOAT32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REAL_L1",
+            "RegNum": 4128,
+            "DataType": "FLOAT32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REAL_L2",
+            "RegNum": 4130,
+            "DataType": "FLOAT32",
+            "ScaleE": 1
+        },
+        {
+            "Key": "POWER_REAL_L3",
+            "RegNum": 4132,
+            "DataType": "FLOAT32",
+            "ScaleE": 1
+        }
+    ]
+}

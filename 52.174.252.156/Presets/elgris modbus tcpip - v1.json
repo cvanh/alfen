@@ -1,0 +1,44 @@
+{
+  "Name": "Elgris Modbus TCP/IP",
+  "Version": "V1.0",
+  "SampleIntervalMs": 2000,
+  "Regmap": [
+    {
+      "Key": "CURRENT_L1",
+	"RegNum": 40072,
+	"DataType": "SIGNED32",
+  	"ScaleE": -3
+    },
+    {
+      "Key": "CURRENT_L2",
+	"RegNum": 40073,
+	"DataType": "SIGNED32",
+  	"ScaleE": -3
+    },
+	{
+      "Key": "CURRENT_L3",
+	"RegNum": 40074,
+	"DataType": "SIGNED32",
+  	"ScaleE": -3
+    },
+	{
+      "Key": "POWER_REAL_L1",
+      "RegNum": 40088,
+      "DataType": "SIGNED32",
+      "ScaleE": 1
+    },  
+    {
+      "Key": "POWER_REAL_L2",
+      "RegNum": 40089,
+      "DataType": "SIGNED32",
+      "ScaleE": 1
+    },
+    {
+      "Key": "POWER_REAL_L3",
+      "RegNum": 40090,
+      "DataType": "SIGNED32",
+      "ScaleE": 1
+    },
+    
+  ]
+}

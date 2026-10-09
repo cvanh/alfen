@@ -1,0 +1,44 @@
+{
+    "Name": "Janitza UMG96RM",
+    "Version": "V1.1",
+    "WordOrder": "highToLow",
+    "SampleIntervalMs": 2000,
+    "Regmap": [
+        {
+            "Key": "CURRENT_L1",
+            "RegNum": 19012,
+            "DataType": "FLOAT32",
+            "ScaleE": -1
+        },
+        {
+            "Key": "CURRENT_L2",
+            "RegNum": 19014,
+            "DataType": "FLOAT32",
+            "ScaleE": -1
+        },
+        {
+            "Key": "CURRENT_L3",
+            "RegNum": 19016,
+            "DataType": "FLOAT32",
+            "ScaleE": -1
+        },
+        {
+            "Key": "POWER_REAL_L1",
+            "RegNum": 19020,
+            "DataType": "FLOAT32",
+            "ScaleE": -1
+        },
+        {
+            "Key": "POWER_REAL_L2",
+            "RegNum": 19022,
+            "DataType": "FLOAT32",
+            "ScaleE": -1
+        },
+        {
+            "Key": "POWER_REAL_L3",
+            "RegNum": 19024,
+            "DataType": "FLOAT32",
+            "ScaleE": -1
+        }
+    ]
+}

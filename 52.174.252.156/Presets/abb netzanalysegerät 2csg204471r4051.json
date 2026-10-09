@@ -1,0 +1,44 @@
+{
+  "Name": "ABB Netzanalysegerät 2CSG204471R4051",
+  "Version": "V1.0",
+  "SampleIntervalMs": 2000,
+  "Regmap": [
+    {
+      "Key": "CURRENT_L1",
+	"RegNum": 23312,
+	"DataType": "UNSIGNED32",
+  	"ScaleE": -2
+    },
+    {
+      "Key": "CURRENT_L2",
+	"RegNum": 23314,
+	"DataType": "UNSIGNED32",
+  	"ScaleE": -2
+    },
+	{
+      "Key": "CURRENT_L3",
+	"RegNum": 23316,
+	"DataType": "UNSIGNED32",
+  	"ScaleE": -2
+    },
+	{
+      "Key": "POWER_REAL_L1",
+      "RegNum": 23326,
+      "DataType": "SIGNED32",
+      "ScaleE": -2
+    },  
+    {
+      "Key": "POWER_REAL_L2",
+      "RegNum": 23328,
+      "DataType": "SIGNED32",
+      "ScaleE": -2
+    },
+    {
+      "Key": "POWER_REAL_L3",
+      "RegNum": 23330,
+      "DataType": "SIGNED32",
+      "ScaleE": -2
+    },
+    
+  ]
+}
