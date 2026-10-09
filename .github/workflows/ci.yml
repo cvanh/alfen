@@ -1,0 +1,155 @@
+# CI + Release for the aceclient Go module.
+#
+# The module lives in the `aceclient/` subdirectory, so every Go command runs
+# there (see defaults.run.working-directory). GitHub only reads workflows from
+# the repo root, which is why this file is at /.github/workflows/.
+#
+# Pipeline:
+#   format  - gofmt check (fails if anything is unformatted)
+#   lint    - golangci-lint
+#   test    - go test ./...
+#   build   - cross-compile every target, upload as a downloadable artifact
+#   release - on push to main only: publish those binaries as a GitHub Release
+#
+# Build is pure-Go (CGO disabled): fyne is an unused indirect dep, so no system
+# GL/X11 libraries are needed and cross-compilation works from one Linux runner.
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "aceclient/**"
+      - ".github/workflows/ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "aceclient/**"
+      - ".github/workflows/ci.yml"
+
+# Least privilege by default; the release job opts into contents: write.
+permissions:
+  contents: read
+
+# Cancel superseded runs on the same branch/PR.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: aceclient
+
+jobs:
+  format:
+    name: Check formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: aceclient/go.mod
+          cache-dependency-path: aceclient/go.sum
+      - name: gofmt
+        run: |
+          unformatted="$(gofmt -l .)"
+          if [ -n "$unformatted" ]; then
+            echo "::error::These files are not gofmt-formatted:"
+            echo "$unformatted"
+            echo "Run: gofmt -w ."
+            exit 1
+          fi
+          echo "All files are gofmt-clean."
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: aceclient/go.mod
+          cache-dependency-path: aceclient/go.sum
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v8
+        with:
+          working-directory: aceclient
+          # "latest" tracks the newest release so it keeps up with the Go
+          # toolchain in go.mod. Pin to a specific vX.Y.Z for reproducibility.
+          version: latest
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: aceclient/go.mod
+          cache-dependency-path: aceclient/go.sum
+      - name: go test
+        run: go test -count=1 ./...
+
+  build:
+    name: Build binaries
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: aceclient/go.mod
+          cache-dependency-path: aceclient/go.sum
+      - name: Cross-compile
+        env:
+          CGO_ENABLED: "0"
+        run: |
+          mkdir -p dist
+          targets="linux/amd64 linux/arm64 darwin/amd64 darwin/arm64 windows/amd64 windows/arm64"
+          for t in $targets; do
+            export GOOS="${t%/*}" GOARCH="${t#*/}"
+            out="dist/aceclient-${GOOS}-${GOARCH}"
+            [ "$GOOS" = "windows" ] && out="${out}.exe"
+            echo "Building $out"
+            go build -trimpath -ldflags "-s -w" -o "$out" ./cmd/aceclient
+          done
+          ls -la dist
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aceclient-binaries
+          path: aceclient/dist/
+          if-no-files-found: error
+          retention-days: 14
+
+  release:
+    name: Release to GitHub
+    runs-on: ubuntu-latest
+    needs: [format, lint, test, build]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+      - name: Download binaries
+        uses: actions/download-artifact@v4
+        with:
+          name: aceclient-binaries
+          path: dist
+      - name: Compute version
+        id: version
+        working-directory: .
+        run: |
+          version="v$(date -u +%Y.%m.%d)-${GITHUB_SHA:0:7}"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "Release version: $version"
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: ${{ steps.version.outputs.version }}
+          body: |
+            Automated release of aceclient built from `main` (${{ github.sha }}).
+
+            Download the binary for your platform below.
+          files: dist/*
+          make_latest: true
