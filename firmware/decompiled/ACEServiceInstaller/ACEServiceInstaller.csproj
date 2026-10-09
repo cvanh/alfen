@@ -1,0 +1,561 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ACEServiceInstaller</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <TargetFramework>net481</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ICUServiceInstaller.Resources.AHP01_52760.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_60223.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_60225.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_60227.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_60323.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_60327.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63012.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63021.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63022.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63023.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63024.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63025.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63026.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63027.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63028.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63031.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63041.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63042.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63121.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63122.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63125.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63126.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63127.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63128.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63141.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63142.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63145.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63146.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63147.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63148.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63225.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63226.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63235.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_63236.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_65025.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_65027.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60603.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60607.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60623.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60625.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60627.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52893.png" />
+    <None Remove="ICUServiceInstaller.Resources.package.png" />
+    <None Remove="ICUServiceInstaller.Resources.wifi-excellent.png" />
+    <None Remove="ICUServiceInstaller.Resources.wifi-fair.png" />
+    <None Remove="ICUServiceInstaller.Resources.wifi-good.png" />
+    <None Remove="ICUServiceInstaller.Resources.wifi-weak.png" />
+    <None Remove="ICUServiceInstaller.Resources.Icon.png" />
+    <None Remove="ICUServiceInstaller.Resources.Compact.png" />
+    <None Remove="ICUServiceInstaller.Resources.Eve_Dual.png" />
+    <None Remove="ICUServiceInstaller.Resources.Tube.png" />
+    <None Remove="ICUServiceInstaller.Resources.Eve_Mini.png" />
+    <None Remove="ICUServiceInstaller.Resources.Eve_Single.png" />
+    <None Remove="ICUServiceInstaller.Resources.Lolo3.png" />
+    <None Remove="ICUServiceInstaller.Resources.Twin_3_0.png" />
+    <None Remove="ICUServiceInstaller.Resources.Twin_4_0.png" />
+    <None Remove="ICUServiceInstaller.Resources.Unknown.png" />
+    <None Remove="ICUServiceInstaller.Resources.block.png" />
+    <None Remove="ICUServiceInstaller.Resources.comm.png" />
+    <None Remove="ICUServiceInstaller.Resources.electricity.png" />
+    <None Remove="ICUServiceInstaller.Resources.Error.png" />
+    <None Remove="ICUServiceInstaller.Resources.Info.png" />
+    <None Remove="ICUServiceInstaller.Resources.power-cord.png" />
+    <None Remove="ICUServiceInstaller.Resources.technology-3.png" />
+    <None Remove="ICUServiceInstaller.Resources.technology.png" />
+    <None Remove="ICUServiceInstaller.Resources.user.png" />
+    <None Remove="ICUServiceInstaller.Resources.Valid.png" />
+    <None Remove="ICUServiceInstaller.Resources.Warning.png" />
+    <None Remove="ICUServiceInstaller.Resources.information.png" />
+    <None Remove="ICUServiceInstaller.Resources.network-connection.png" />
+    <None Remove="ICUServiceInstaller.Resources.settings.png" />
+    <None Remove="ICUServiceInstaller.Resources.technology-2.png" />
+    <None Remove="ICUServiceInstaller.Resources.interface.png" />
+    <None Remove="ICUServiceInstaller.Resources.cloud-computing.png" />
+    <None Remove="ICUServiceInstaller.Resources.upload.png" />
+    <None Remove="ICUServiceInstaller.Resources.pencil.png" />
+    <None Remove="ICUServiceInstaller.Resources.add16.png" />
+    <None Remove="ICUServiceInstaller.Resources.delete16.png" />
+    <None Remove="ICUServiceInstaller.Resources.empty16.png" />
+    <None Remove="ICUServiceInstaller.Resources.power-button-off.png" />
+    <None Remove="ICUServiceInstaller.Resources.update-arrow.png" />
+    <None Remove="ICUServiceInstaller.Resources.internet.png" />
+    <None Remove="ICUServiceInstaller.Resources.arrow-to-last-track.png" />
+    <None Remove="ICUServiceInstaller.Resources.linenumber.png" />
+    <None Remove="ICUServiceInstaller.Resources.socket.png" />
+    <None Remove="ICUServiceInstaller.Resources.graphic.png" />
+    <None Remove="ICUServiceInstaller.Resources.Eve_Mini_FC.png" />
+    <None Remove="ICUServiceInstaller.Resources.Banner.png" />
+    <None Remove="ICUServiceInstaller.Resources.padlock.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60605.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP01_52750.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP01_52752.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_62005.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHPDC_30001.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_61423.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHP02_61323.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52505.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52514.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52551.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_62003.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_62004.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52655.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52653.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52654.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52699.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52661.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52660.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52571.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52599.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52651.png" />
+    <None Remove="ICUServiceInstaller.Resources.AHWP01_52652.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60503.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60505.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60507.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60553.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60555.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60557.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60573.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60575.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60577.png" />
+    <None Remove="ICUServiceInstaller.Resources.lock.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52570.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60523.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60525.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60527.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60583.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60585.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60587.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60593.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60595.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60597.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61031.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61032.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52507.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52513.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_62002.png" />
+    <None Remove="ICUServiceInstaller.Resources.logo_alfen_small.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52506.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61007.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61008.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61017.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61018.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61027.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61028.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61037.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61038.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61127.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61128.png" />
+    <None Remove="ICUServiceInstaller.Resources.security.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60103.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60107.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60123.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60127.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61021.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61022.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61205.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61206.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61215.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61216.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60004.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60006.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60011.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60013.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60022.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60024.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60026.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60031.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60033.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60035.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52001.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52002.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG900_60503.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG900_60505.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG900_60507.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60007.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60027.png" />
+    <None Remove="ICUServiceInstaller.Resources.Twin_5_0.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61101.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61102.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_62001.png" />
+    <None Remove="ICUServiceInstaller.Resources.certificate.png" />
+    <None Remove="ICUServiceInstaller.Resources.alert.png" />
+    <None Remove="ICUServiceInstaller.Resources.loadbalancing.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60005.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60025.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60003.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60021.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60023.png" />
+    <None Remove="ICUServiceInstaller.Resources.swap24.png" />
+    <None Remove="ICUServiceInstaller.Resources.networking-overview.png" />
+    <None Remove="ICUServiceInstaller.Resources.networking-settings.png" />
+    <None Remove="ICUServiceInstaller.Resources.console.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60002.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60001.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52512.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60012.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60014.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60016.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60032.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60034.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG910_60036.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52501.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52502.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52504.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_52511.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61001.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61002.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61011.png" />
+    <None Remove="ICUServiceInstaller.Resources.NG920_61012.png" />
+    <None Remove="ICUServiceInstaller.Resources.Twin_4_XL.png" />
+    <None Remove="ICUServiceInstaller.Resources.SplashScreen.png" />
+    <None Remove="ICUServiceInstaller.Resources.arrow-down.png" />
+    <None Remove="ICUServiceInstaller.Resources.arrow-up.png" />
+    <None Remove="ICUServiceInstaller.Resources.networking.png" />
+    <None Remove="ICUServiceInstaller.Resources.Lolo3_FC.png" />
+    <None Remove="ICUServiceInstaller.Resources.cash-register.png" />
+    <None Remove="ICUServiceInstaller.Resources.refresh24.png" />
+    <None Remove="ICUServiceInstaller.Resources.edit24.png" />
+    <None Remove="ICUServiceInstaller.Resources.left-arrow.png" />
+    <None Remove="ICUServiceInstaller.Resources.settings-gears.png" />
+    <None Remove="ICUServiceInstaller.Resources.Twin_4_1.png" />
+    <None Remove="ICUServiceInstaller.Resources.Twin_4_2.png" />
+    <None Remove="ICUServiceInstaller.Resources.tabs.png" />
+    <None Remove="ICUServiceInstaller.Resources.report.png" />
+    <None Remove="ICUServiceInstaller.Resources.factory.png" />
+    <None Remove="ICUServiceInstaller.Resources.edit_image.png" />
+    <None Remove="ICUServiceInstaller.Resources.closed-trash-can.png" />
+    <None Remove="ICUServiceInstaller.Resources.Tube_1.png" />
+    <None Remove="ICUServiceInstaller.Resources.Tube_2.png" />
+    <None Remove="ICUServiceInstaller.Resources.Compact_FC.png" />
+    <None Remove="ICUServiceInstaller.Resources.Compact_Mini.png" />
+    <None Remove="ICUServiceInstaller.Resources.command.png" />
+    <None Remove="ICUServiceInstaller.Resources.add24.png" />
+    <None Remove="ICUServiceInstaller.Resources.remove24.png" />
+    <None Remove="ICUServiceInstaller.Resources.open-folder.png" />
+    <None Remove="ICUServiceInstaller.Resources.whitelist.png" />
+    <None Remove="ICUServiceInstaller.Resources.reboot.png" />
+    <None Remove="ICUServiceInstaller.Resources.double-up-arrow.png" />
+    <None Remove="ICUServiceInstaller.Resources.save.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP01_52760.png" LogicalName="ICUServiceInstaller.Resources.AHP01_52760.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_60223.png" LogicalName="ICUServiceInstaller.Resources.AHP02_60223.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_60225.png" LogicalName="ICUServiceInstaller.Resources.AHP02_60225.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_60227.png" LogicalName="ICUServiceInstaller.Resources.AHP02_60227.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_60323.png" LogicalName="ICUServiceInstaller.Resources.AHP02_60323.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_60327.png" LogicalName="ICUServiceInstaller.Resources.AHP02_60327.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63012.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63012.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63021.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63021.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63022.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63022.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63023.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63023.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63024.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63024.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63025.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63025.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63026.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63026.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63027.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63027.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63028.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63028.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63031.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63031.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63041.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63041.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63042.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63042.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63121.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63121.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63122.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63122.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63125.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63125.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63126.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63126.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63127.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63127.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63128.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63128.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63141.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63141.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63142.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63142.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63145.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63145.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63146.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63146.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63147.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63147.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63148.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63148.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63225.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63225.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63226.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63226.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63235.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63235.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_63236.png" LogicalName="ICUServiceInstaller.Resources.AHP02_63236.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_65025.png" LogicalName="ICUServiceInstaller.Resources.AHP02_65025.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_65027.png" LogicalName="ICUServiceInstaller.Resources.AHP02_65027.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60603.png" LogicalName="ICUServiceInstaller.Resources.NG910_60603.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60607.png" LogicalName="ICUServiceInstaller.Resources.NG910_60607.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60623.png" LogicalName="ICUServiceInstaller.Resources.NG910_60623.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60625.png" LogicalName="ICUServiceInstaller.Resources.NG910_60625.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60627.png" LogicalName="ICUServiceInstaller.Resources.NG910_60627.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52893.png" LogicalName="ICUServiceInstaller.Resources.NG920_52893.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.package.png" LogicalName="ICUServiceInstaller.Resources.package.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.wifi-excellent.png" LogicalName="ICUServiceInstaller.Resources.wifi-excellent.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.wifi-fair.png" LogicalName="ICUServiceInstaller.Resources.wifi-fair.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.wifi-good.png" LogicalName="ICUServiceInstaller.Resources.wifi-good.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.wifi-weak.png" LogicalName="ICUServiceInstaller.Resources.wifi-weak.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Icon.png" LogicalName="ICUServiceInstaller.Resources.Icon.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Compact.png" LogicalName="ICUServiceInstaller.Resources.Compact.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Eve_Dual.png" LogicalName="ICUServiceInstaller.Resources.Eve_Dual.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Tube.png" LogicalName="ICUServiceInstaller.Resources.Tube.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Eve_Mini.png" LogicalName="ICUServiceInstaller.Resources.Eve_Mini.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Eve_Single.png" LogicalName="ICUServiceInstaller.Resources.Eve_Single.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Lolo3.png" LogicalName="ICUServiceInstaller.Resources.Lolo3.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Twin_3_0.png" LogicalName="ICUServiceInstaller.Resources.Twin_3_0.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Twin_4_0.png" LogicalName="ICUServiceInstaller.Resources.Twin_4_0.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Unknown.png" LogicalName="ICUServiceInstaller.Resources.Unknown.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.block.png" LogicalName="ICUServiceInstaller.Resources.block.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.comm.png" LogicalName="ICUServiceInstaller.Resources.comm.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.electricity.png" LogicalName="ICUServiceInstaller.Resources.electricity.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Error.png" LogicalName="ICUServiceInstaller.Resources.Error.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Info.png" LogicalName="ICUServiceInstaller.Resources.Info.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.power-cord.png" LogicalName="ICUServiceInstaller.Resources.power-cord.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.technology-3.png" LogicalName="ICUServiceInstaller.Resources.technology-3.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.technology.png" LogicalName="ICUServiceInstaller.Resources.technology.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.user.png" LogicalName="ICUServiceInstaller.Resources.user.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Valid.png" LogicalName="ICUServiceInstaller.Resources.Valid.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Warning.png" LogicalName="ICUServiceInstaller.Resources.Warning.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.information.png" LogicalName="ICUServiceInstaller.Resources.information.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.network-connection.png" LogicalName="ICUServiceInstaller.Resources.network-connection.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.settings.png" LogicalName="ICUServiceInstaller.Resources.settings.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.technology-2.png" LogicalName="ICUServiceInstaller.Resources.technology-2.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.interface.png" LogicalName="ICUServiceInstaller.Resources.interface.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.cloud-computing.png" LogicalName="ICUServiceInstaller.Resources.cloud-computing.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.upload.png" LogicalName="ICUServiceInstaller.Resources.upload.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.pencil.png" LogicalName="ICUServiceInstaller.Resources.pencil.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.add16.png" LogicalName="ICUServiceInstaller.Resources.add16.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.delete16.png" LogicalName="ICUServiceInstaller.Resources.delete16.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.empty16.png" LogicalName="ICUServiceInstaller.Resources.empty16.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.power-button-off.png" LogicalName="ICUServiceInstaller.Resources.power-button-off.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.update-arrow.png" LogicalName="ICUServiceInstaller.Resources.update-arrow.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.internet.png" LogicalName="ICUServiceInstaller.Resources.internet.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.arrow-to-last-track.png" LogicalName="ICUServiceInstaller.Resources.arrow-to-last-track.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.linenumber.png" LogicalName="ICUServiceInstaller.Resources.linenumber.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.socket.png" LogicalName="ICUServiceInstaller.Resources.socket.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.graphic.png" LogicalName="ICUServiceInstaller.Resources.graphic.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Eve_Mini_FC.png" LogicalName="ICUServiceInstaller.Resources.Eve_Mini_FC.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Banner.png" LogicalName="ICUServiceInstaller.Resources.Banner.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.padlock.png" LogicalName="ICUServiceInstaller.Resources.padlock.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60605.png" LogicalName="ICUServiceInstaller.Resources.NG910_60605.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP01_52750.png" LogicalName="ICUServiceInstaller.Resources.AHP01_52750.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP01_52752.png" LogicalName="ICUServiceInstaller.Resources.AHP01_52752.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_62005.png" LogicalName="ICUServiceInstaller.Resources.NG920_62005.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHPDC_30001.png" LogicalName="ICUServiceInstaller.Resources.AHPDC_30001.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_61423.png" LogicalName="ICUServiceInstaller.Resources.AHP02_61423.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHP02_61323.png" LogicalName="ICUServiceInstaller.Resources.AHP02_61323.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52505.png" LogicalName="ICUServiceInstaller.Resources.NG920_52505.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52514.png" LogicalName="ICUServiceInstaller.Resources.NG920_52514.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52551.png" LogicalName="ICUServiceInstaller.Resources.NG920_52551.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_62003.png" LogicalName="ICUServiceInstaller.Resources.NG920_62003.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_62004.png" LogicalName="ICUServiceInstaller.Resources.NG920_62004.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52655.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52655.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52653.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52653.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52654.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52654.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52699.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52699.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52661.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52661.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52660.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52660.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52571.png" LogicalName="ICUServiceInstaller.Resources.NG920_52571.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52599.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52599.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52651.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52651.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.AHWP01_52652.png" LogicalName="ICUServiceInstaller.Resources.AHWP01_52652.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60503.png" LogicalName="ICUServiceInstaller.Resources.NG910_60503.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60505.png" LogicalName="ICUServiceInstaller.Resources.NG910_60505.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60507.png" LogicalName="ICUServiceInstaller.Resources.NG910_60507.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60553.png" LogicalName="ICUServiceInstaller.Resources.NG910_60553.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60555.png" LogicalName="ICUServiceInstaller.Resources.NG910_60555.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60557.png" LogicalName="ICUServiceInstaller.Resources.NG910_60557.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60573.png" LogicalName="ICUServiceInstaller.Resources.NG910_60573.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60575.png" LogicalName="ICUServiceInstaller.Resources.NG910_60575.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60577.png" LogicalName="ICUServiceInstaller.Resources.NG910_60577.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.lock.png" LogicalName="ICUServiceInstaller.Resources.lock.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52570.png" LogicalName="ICUServiceInstaller.Resources.NG920_52570.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60523.png" LogicalName="ICUServiceInstaller.Resources.NG910_60523.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60525.png" LogicalName="ICUServiceInstaller.Resources.NG910_60525.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60527.png" LogicalName="ICUServiceInstaller.Resources.NG910_60527.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60583.png" LogicalName="ICUServiceInstaller.Resources.NG910_60583.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60585.png" LogicalName="ICUServiceInstaller.Resources.NG910_60585.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60587.png" LogicalName="ICUServiceInstaller.Resources.NG910_60587.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60593.png" LogicalName="ICUServiceInstaller.Resources.NG910_60593.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60595.png" LogicalName="ICUServiceInstaller.Resources.NG910_60595.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60597.png" LogicalName="ICUServiceInstaller.Resources.NG910_60597.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61031.png" LogicalName="ICUServiceInstaller.Resources.NG920_61031.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61032.png" LogicalName="ICUServiceInstaller.Resources.NG920_61032.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52507.png" LogicalName="ICUServiceInstaller.Resources.NG920_52507.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52513.png" LogicalName="ICUServiceInstaller.Resources.NG920_52513.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_62002.png" LogicalName="ICUServiceInstaller.Resources.NG920_62002.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.logo_alfen_small.png" LogicalName="ICUServiceInstaller.Resources.logo_alfen_small.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52506.png" LogicalName="ICUServiceInstaller.Resources.NG920_52506.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61007.png" LogicalName="ICUServiceInstaller.Resources.NG920_61007.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61008.png" LogicalName="ICUServiceInstaller.Resources.NG920_61008.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61017.png" LogicalName="ICUServiceInstaller.Resources.NG920_61017.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61018.png" LogicalName="ICUServiceInstaller.Resources.NG920_61018.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61027.png" LogicalName="ICUServiceInstaller.Resources.NG920_61027.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61028.png" LogicalName="ICUServiceInstaller.Resources.NG920_61028.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61037.png" LogicalName="ICUServiceInstaller.Resources.NG920_61037.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61038.png" LogicalName="ICUServiceInstaller.Resources.NG920_61038.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61127.png" LogicalName="ICUServiceInstaller.Resources.NG920_61127.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61128.png" LogicalName="ICUServiceInstaller.Resources.NG920_61128.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.security.png" LogicalName="ICUServiceInstaller.Resources.security.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60103.png" LogicalName="ICUServiceInstaller.Resources.NG910_60103.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60107.png" LogicalName="ICUServiceInstaller.Resources.NG910_60107.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60123.png" LogicalName="ICUServiceInstaller.Resources.NG910_60123.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60127.png" LogicalName="ICUServiceInstaller.Resources.NG910_60127.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61021.png" LogicalName="ICUServiceInstaller.Resources.NG920_61021.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61022.png" LogicalName="ICUServiceInstaller.Resources.NG920_61022.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61205.png" LogicalName="ICUServiceInstaller.Resources.NG920_61205.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61206.png" LogicalName="ICUServiceInstaller.Resources.NG920_61206.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61215.png" LogicalName="ICUServiceInstaller.Resources.NG920_61215.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61216.png" LogicalName="ICUServiceInstaller.Resources.NG920_61216.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60004.png" LogicalName="ICUServiceInstaller.Resources.NG910_60004.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60006.png" LogicalName="ICUServiceInstaller.Resources.NG910_60006.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60011.png" LogicalName="ICUServiceInstaller.Resources.NG910_60011.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60013.png" LogicalName="ICUServiceInstaller.Resources.NG910_60013.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60022.png" LogicalName="ICUServiceInstaller.Resources.NG910_60022.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60024.png" LogicalName="ICUServiceInstaller.Resources.NG910_60024.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60026.png" LogicalName="ICUServiceInstaller.Resources.NG910_60026.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60031.png" LogicalName="ICUServiceInstaller.Resources.NG910_60031.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60033.png" LogicalName="ICUServiceInstaller.Resources.NG910_60033.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60035.png" LogicalName="ICUServiceInstaller.Resources.NG910_60035.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52001.png" LogicalName="ICUServiceInstaller.Resources.NG920_52001.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52002.png" LogicalName="ICUServiceInstaller.Resources.NG920_52002.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG900_60503.png" LogicalName="ICUServiceInstaller.Resources.NG900_60503.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG900_60505.png" LogicalName="ICUServiceInstaller.Resources.NG900_60505.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG900_60507.png" LogicalName="ICUServiceInstaller.Resources.NG900_60507.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60007.png" LogicalName="ICUServiceInstaller.Resources.NG910_60007.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60027.png" LogicalName="ICUServiceInstaller.Resources.NG910_60027.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Twin_5_0.png" LogicalName="ICUServiceInstaller.Resources.Twin_5_0.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61101.png" LogicalName="ICUServiceInstaller.Resources.NG920_61101.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61102.png" LogicalName="ICUServiceInstaller.Resources.NG920_61102.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_62001.png" LogicalName="ICUServiceInstaller.Resources.NG920_62001.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.certificate.png" LogicalName="ICUServiceInstaller.Resources.certificate.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.alert.png" LogicalName="ICUServiceInstaller.Resources.alert.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.loadbalancing.png" LogicalName="ICUServiceInstaller.Resources.loadbalancing.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60005.png" LogicalName="ICUServiceInstaller.Resources.NG910_60005.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60025.png" LogicalName="ICUServiceInstaller.Resources.NG910_60025.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60003.png" LogicalName="ICUServiceInstaller.Resources.NG910_60003.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60021.png" LogicalName="ICUServiceInstaller.Resources.NG910_60021.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60023.png" LogicalName="ICUServiceInstaller.Resources.NG910_60023.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.swap24.png" LogicalName="ICUServiceInstaller.Resources.swap24.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.networking-overview.png" LogicalName="ICUServiceInstaller.Resources.networking-overview.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.networking-settings.png" LogicalName="ICUServiceInstaller.Resources.networking-settings.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.console.png" LogicalName="ICUServiceInstaller.Resources.console.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60002.png" LogicalName="ICUServiceInstaller.Resources.NG910_60002.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60001.png" LogicalName="ICUServiceInstaller.Resources.NG910_60001.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52512.png" LogicalName="ICUServiceInstaller.Resources.NG920_52512.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60012.png" LogicalName="ICUServiceInstaller.Resources.NG910_60012.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60014.png" LogicalName="ICUServiceInstaller.Resources.NG910_60014.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60016.png" LogicalName="ICUServiceInstaller.Resources.NG910_60016.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60032.png" LogicalName="ICUServiceInstaller.Resources.NG910_60032.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60034.png" LogicalName="ICUServiceInstaller.Resources.NG910_60034.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG910_60036.png" LogicalName="ICUServiceInstaller.Resources.NG910_60036.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52501.png" LogicalName="ICUServiceInstaller.Resources.NG920_52501.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52502.png" LogicalName="ICUServiceInstaller.Resources.NG920_52502.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52504.png" LogicalName="ICUServiceInstaller.Resources.NG920_52504.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_52511.png" LogicalName="ICUServiceInstaller.Resources.NG920_52511.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61001.png" LogicalName="ICUServiceInstaller.Resources.NG920_61001.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61002.png" LogicalName="ICUServiceInstaller.Resources.NG920_61002.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61011.png" LogicalName="ICUServiceInstaller.Resources.NG920_61011.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.NG920_61012.png" LogicalName="ICUServiceInstaller.Resources.NG920_61012.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Twin_4_XL.png" LogicalName="ICUServiceInstaller.Resources.Twin_4_XL.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.SplashScreen.png" LogicalName="ICUServiceInstaller.Resources.SplashScreen.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.arrow-down.png" LogicalName="ICUServiceInstaller.Resources.arrow-down.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.arrow-up.png" LogicalName="ICUServiceInstaller.Resources.arrow-up.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.networking.png" LogicalName="ICUServiceInstaller.Resources.networking.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Lolo3_FC.png" LogicalName="ICUServiceInstaller.Resources.Lolo3_FC.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.cash-register.png" LogicalName="ICUServiceInstaller.Resources.cash-register.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.refresh24.png" LogicalName="ICUServiceInstaller.Resources.refresh24.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.edit24.png" LogicalName="ICUServiceInstaller.Resources.edit24.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.left-arrow.png" LogicalName="ICUServiceInstaller.Resources.left-arrow.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.settings-gears.png" LogicalName="ICUServiceInstaller.Resources.settings-gears.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Twin_4_1.png" LogicalName="ICUServiceInstaller.Resources.Twin_4_1.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Twin_4_2.png" LogicalName="ICUServiceInstaller.Resources.Twin_4_2.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.tabs.png" LogicalName="ICUServiceInstaller.Resources.tabs.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.report.png" LogicalName="ICUServiceInstaller.Resources.report.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.factory.png" LogicalName="ICUServiceInstaller.Resources.factory.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.edit_image.png" LogicalName="ICUServiceInstaller.Resources.edit_image.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.closed-trash-can.png" LogicalName="ICUServiceInstaller.Resources.closed-trash-can.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Tube_1.png" LogicalName="ICUServiceInstaller.Resources.Tube_1.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Tube_2.png" LogicalName="ICUServiceInstaller.Resources.Tube_2.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Compact_FC.png" LogicalName="ICUServiceInstaller.Resources.Compact_FC.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.Compact_Mini.png" LogicalName="ICUServiceInstaller.Resources.Compact_Mini.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.command.png" LogicalName="ICUServiceInstaller.Resources.command.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.add24.png" LogicalName="ICUServiceInstaller.Resources.add24.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.remove24.png" LogicalName="ICUServiceInstaller.Resources.remove24.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.open-folder.png" LogicalName="ICUServiceInstaller.Resources.open-folder.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.whitelist.png" LogicalName="ICUServiceInstaller.Resources.whitelist.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.reboot.png" LogicalName="ICUServiceInstaller.Resources.reboot.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.double-up-arrow.png" LogicalName="ICUServiceInstaller.Resources.double-up-arrow.png" />
+    <EmbeddedResource Include="ICUServiceInstaller.Resources.save.png" LogicalName="ICUServiceInstaller.Resources.save.png" />
+    <ApplicationConfig Remove="ACEServiceInstaller.exe.config" />
+    <ApplicationConfig Include="ACEServiceInstaller.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ACESettings">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/ACESettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Xwt">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Xwt.dll</HintPath>
+    </Reference>
+    <Reference Include="ACENetwork">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/ACENetwork.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.12/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ACEISAHConnection">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/ACEISAHConnection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.12/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.12/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Exceptions">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Serilog.Exceptions.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.ApplicationInsights">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Serilog.Sinks.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.Async">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Serilog.Sinks.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.12/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ACELogoConvertor">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/ACELogoConvertor.dll</HintPath>
+    </Reference>
+    <Reference Include="ACEFWUCreator">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/ACEFWUCreator.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Enrichers.GlobalLogContext">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Serilog.Enrichers.GlobalLogContext.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Formatting.Compact">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Serilog.Formatting.Compact.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File">
+      <HintPath>../../../../../../../Users/cvanh/Documents/untitled folder/firmware/msi_work/files3/Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
