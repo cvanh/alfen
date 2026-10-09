@@ -1,0 +1,51 @@
+LANGUAGE: en_GB
+DISP_CHARGE_POINT_BOOTING,                      "Charge point starting up",            						29, 160,  15
+DISP_PLEASE_HOLD_CARD_START,                    "Please hold card\nover reader below",                   	28, 160, 187
+DISP_PLEASE_HOLD_CARD_STOP,                     "To stop charging, please\nhold card over reader below",   	28, 160, 187
+DISP_PLEASE_REMOVE_CABLE_PLUGANDCHARGE,         "To stop charging, please\nunplug cable from car",         	28, 160, 187
+DISP_CARD_ACCEPTED,                             "Card accepted",                       						29, 160,  28
+DISP_CARD_NOT_ACCEPTED,                         "Incorrect card",                      						29, 160,  28
+DISP_PLEASE_HOLD_CARD_TO_UNLOCK,                "To unlock cable, please\nhold card over reader below",    	28, 160, 187
+DISP_CABLE_CONNECTED,                           "Cable connected",                     						29, 160,  28
+DISP_CABLE_CONNECTED_TIMEOUT,                   "Remove charging cable\nAnd connect your cable again",      28, 160,  23
+DISP_PLUG_CABLE_INTO_SOCKET,                    "Please plug cable into socket",      						28, 160, 198
+DISP_EV_CONNECTED,                              "Vehicle is connected\nto charge point",                	28, 160,  23
+DISP_WAIT_FOR_EVCONNECT,                        "",                                    						29, 160,  28
+DISP_WAIT_FOR_EVRECONNECT,                      "Please plug cable\ninto vehicle",                   		28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE,                "Charge point ready,\nwaiting for vehicle",                	28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE_SMART_CHARGING, "Charge point ready,\nwaiting for power",                 	28, 160,  23
+DISP_CHARGING,                                  "Charging in progress",                						29, 160,  28
+DISP_END_OF_SESSION,                            "End of session",                      						29, 160,  25
+DISP_CHARGING_DURATION,                         "Charging duration: %02d:%02dh",       						29, 160, 100
+DISP_CHARGING_CONSUMPTION,                      "Consumption: %4.2fkWh",           							29, 160, 125 
+DISP_GOODBYE,                                   "Have a safe journey!",                						28, 160, 198
+DISP_ERROR,                                     "Code: %03d",                          						28, 160, 194
+DISP_RESERVED,                                  "Charge point reserved",               						29, 160,  28
+DISP_TEMPORARILY_OUT_OF_ORDER,                  "Temporarily out of order",            						29, 160,  28
+DISP_CABLE_NOT_SUPPORTED,                       "Cable not supported",                 						29, 160,  28
+DISP_CABLE_NOT_SUPPORTED_REMOVE_CABLE,          "Please unplug cable\nfrom charge point",  					28, 160, 187
+DISP_TOTAL,          							"Total",              										28, 250,  85
+DISP_PLUG_CABLE_INTO_VEHICLE,                   "Please plug cable into vehicle",      						28, 160, 198
+DISP_PLEASE_HOLD_CARD_START_LOCKED,			    "Socket is locked\nPlease hold card over reader below",				28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED2,			"Both sockets are locked\nPlease hold card over reader below",		28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED,		    "The socket is now unlocked\nPlease plug cable into socket",		28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED2,		    "Both sockets are now unlocked\nPlease plug cable into a socket",	28, 160, 187
+DISP_FOR_FUTURE_USE_1,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_2,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_3,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_4,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_5,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_6,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_7,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_8,                          "",                                                                 28, 160,  23
+DISP_MASTER_TAG_MODE,                           "Master key presented\nSwipe a card to add or remove",              28, 160, 187
+DISP_MASTER_TAG_MODE_ADDED,						"Card added",														28, 160, 198
+DISP_MASTER_TAG_MODE_REMOVED,					"Card removed",														28, 160, 198
+DISP_START_METER_VALUE,                         "Start Meter Value",                                                28, 250, 96
+DISP_ACTUAL_METER_VALUE,                        "Actual Meter Value",                                               28, 250, 126
+DISP_FOR_FUTURE_USE_9,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_10,                         "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_11,                         "",                                                                 28, 160,  23
+DISP_PLEASE_WAIT,                               "Please wait",                                                      29, 160,  28
+DISP_DISCLAIMER,                                "Display of the measurement data is not legally binding according to Eichrecht", 28, 160, 226
+DISP_COMMUNICATING_WITH_VEHICLE_SUSPENDED,      "Charging session halted\nby the energy supplier",                  28, 160,  23

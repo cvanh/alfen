@@ -1,0 +1,51 @@
+LANGUAGE: nn_NO
+DISP_CHARGE_POINT_BOOTING,                      "Ladepunktet starter",                   						29, 160,  15
+DISP_PLEASE_HOLD_CARD_START,                    "Hold kortet over\nleseren nedenfor",             				28, 160, 187
+DISP_PLEASE_HOLD_CARD_STOP,                     "Hold kortet over leseren\nnedenfor for å stoppe lading", 		28, 160, 187
+DISP_PLEASE_REMOVE_CABLE_PLUGANDCHARGE,         "Plugg fra kabelen for\nå stoppe lading", 						28, 160, 187
+DISP_CARD_ACCEPTED,                             "Kortet er godkjent",                  							29, 160,  28
+DISP_CARD_NOT_ACCEPTED,                         "Feil kort",                     								29, 160,  28
+DISP_PLEASE_HOLD_CARD_TO_UNLOCK,                "Hold kortet over leseren nedenfor\nfor å låse opp kabelen", 	28, 160, 187
+DISP_CABLE_CONNECTED,                           "Kabelen er koblet til",               							29, 160,  28
+DISP_CABLE_CONNECTED_TIMEOUT,                   "Plugg kabelen\nfra ladepunktet",              					28, 160,  23
+DISP_PLUG_CABLE_INTO_SOCKET,                    "Plugg kabelen inn i uttaket",          						28, 160, 198
+DISP_EV_CONNECTED,                              "Kjøretøyet er koblet\ntil ladepunkt",    						28, 160,  23
+DISP_WAIT_FOR_EVCONNECT,                        "",                                    							29, 160,  28
+DISP_WAIT_FOR_EVRECONNECT,                      "Plugg kabelen inn\ni kjøretøyet",          					28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE,                "Ladepunktet er klart,\nventer på kjøretøy",  					28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE_SMART_CHARGING, "Ladepunktet er klart,\nventer på strøm",  						28, 160,  23
+DISP_CHARGING,                                  "Lading pågår",           										29, 160,  28
+DISP_END_OF_SESSION,                            "Slutten av økten",                     						29, 160,  25
+DISP_CHARGING_DURATION,                         "Ladevarighet: %02d:%02dh",                						29, 160, 100
+DISP_CHARGING_CONSUMPTION,                      "Forbruk: %4.2fkWh",                    						29, 160, 125
+DISP_GOODBYE,                                   "Ha en trygg reise!",                         					28, 160, 198
+DISP_ERROR,                                     "Kode: %03d",                          							28, 160, 194
+DISP_RESERVED,                                  "Ladepunktet er reservert",               						29, 160,  28
+DISP_TEMPORARILY_OUT_OF_ORDER,                  "Midlertidig i ustand",            								29, 160,  28
+DISP_CABLE_NOT_SUPPORTED,                       "Kabelen støttes ikke",          								29, 160,  28
+DISP_CABLE_NOT_SUPPORTED_REMOVE_CABLE,          "Plugg kabelen\nfra ladepunktet",              					28, 160, 187
+DISP_TOTAL,                                     "Forbruk:",                              						28, 250,  85
+DISP_PLUG_CABLE_INTO_VEHICLE,                   "Plugg kabelen inn i kjøretøyet",          						28, 160, 198
+DISP_PLEASE_HOLD_CARD_START_LOCKED,             "Stikkontakten er låst\nVennligst hold kort over leseren under",                    28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED2,            "Begge stikkontaktene er låst\nVennligst hold kort over leseren under",             28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED,           "Stikkontakten er nå låst opp\nVennligst koble kabelen til kontakten",              28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED2,          "Begge stikkontaktene er nå låst opp\nVennligst koble kabelen til kontakten",       28, 160, 187
+DISP_FOR_FUTURE_USE_1,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_2,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_3,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_4,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_5,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_6,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_7,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_8,                          "",                                                                                 28, 160,  23
+DISP_MASTER_TAG_MODE,                           "Hovednøkkel presentert\nDra et kort for å legge til eller fjerne",                 28, 160, 187
+DISP_MASTER_TAG_MODE_ADDED,                     "Kort lagt til",                                                                    28, 160, 198
+DISP_MASTER_TAG_MODE_REMOVED,                   "Kort fjernet",                                                                     28, 160, 198
+DISP_START_METER_VALUE,                         "Start Meter Verdi",                                                                28, 250, 96
+DISP_ACTUAL_METER_VALUE,                        "Faktisk målerverdi",                                                               28, 250, 126
+DISP_FOR_FUTURE_USE_9,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_10,                         "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_11,                         "",                                                                                 28, 160,  23
+DISP_PLEASE_WAIT,                               "Vennligst vent",                                                                   29, 160,  28
+DISP_DISCLAIMER,                                "Visning av måledataene er ikke juridisk bindende i henhold til Eichrecht",         28, 160, 226
+DISP_COMMUNICATING_WITH_VEHICLE_SUSPENDED,      "Ladestasjon stoppet\nav energileverandøren",                                       28, 160,  23

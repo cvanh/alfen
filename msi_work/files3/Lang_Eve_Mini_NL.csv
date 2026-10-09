@@ -1,0 +1,51 @@
+LANGUAGE: nl_NL
+DISP_CHARGE_POINT_BOOTING,                      "Laadpunt start op",                   			29, 160,  15
+DISP_PLEASE_HOLD_CARD_START,                    "Kaart voor lezer houden",             			28, 160, 198
+DISP_PLEASE_HOLD_CARD_STOP,                     "Kaart voor lezer houden\nom te stoppen", 		28, 160, 187
+DISP_PLEASE_REMOVE_CABLE_PLUGANDCHARGE,         "Laadkabel uit voertuig halen\nom te stoppen", 	28, 160, 187
+DISP_CARD_ACCEPTED,                             "Kaart geaccepteerd",                  			29, 160,  28
+DISP_CARD_NOT_ACCEPTED,                         "Ongeldige kaart",                     			29, 160,  28
+DISP_PLEASE_HOLD_CARD_TO_UNLOCK,                "Kaart voor lezer houden\nom te ontgrendelen", 	28, 160, 187
+DISP_CABLE_CONNECTED,                           "Laadkabel aangesloten",               			29, 160,  28
+DISP_CABLE_CONNECTED_TIMEOUT,                   "Verwijder uw laadkabel",              			29, 160,  28
+DISP_PLUG_CABLE_INTO_SOCKET,                    "Plug laadkabel in",          					28, 160, 198
+DISP_EV_CONNECTED,                              "Voertuig verbonden\nmet laadpunt",    			28, 160,  23
+DISP_WAIT_FOR_EVCONNECT,                        "",                                    			29, 160,  28
+DISP_WAIT_FOR_EVRECONNECT,                      "Plug laadkabel in voertuig",          			29, 160,  28
+DISP_COMMUNICATING_WITH_VEHICLE,                "Laadpunt gereed,\nwacht op voertuig",  		28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE_SMART_CHARGING, "Laadpunt gereed,\nwacht op vermogen",  		28, 160,  23
+DISP_CHARGING,                                  "Voertuig wordt geladen",           			29, 160,  28
+DISP_END_OF_SESSION,                            "Eind laadsessie",                     			29, 160,  25
+DISP_CHARGING_DURATION,                         "Laadtijd: %02d:%02dh",                			29, 160, 100
+DISP_CHARGING_CONSUMPTION,                      "Totaal: %4.2fkWh",                    			29, 160, 125
+DISP_GOODBYE,                                   "Goede reis!",                         			28, 160, 198
+DISP_ERROR,                                     "Code: %03d",                          			28, 160, 194
+DISP_RESERVED,                                  "Laadpunt gereserveerd",               			29, 160,  28
+DISP_TEMPORARILY_OUT_OF_ORDER,                  "Tijdelijk buiten gebruik",            			29, 160,  28
+DISP_CABLE_NOT_SUPPORTED,                       "Laadkabel niet ondersteund",          			29, 160,  28
+DISP_CABLE_NOT_SUPPORTED_REMOVE_CABLE,          "Verwijder uw laadkabel",              			28, 160, 198
+DISP_TOTAL,                                     "Totaal",                              			28, 250,  85
+DISP_PLUG_CABLE_INTO_VEHICLE,                   "Plug laadkabel in voertuig",          			28, 160, 198
+DISP_PLEASE_HOLD_CARD_START_LOCKED,			    "Deksel is gesloten\nKaart voor lezer houden",						28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED2,			"Beide deksels zijn gesloten\nKaart voor lezer houden",				28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED,		    "Deksel is open\nPlug laadkabel in",								28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED2,		    "Beide deksels zijn nu open\nPlug laadkabel in",					28, 160, 187
+DISP_FOR_FUTURE_USE_1,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_2,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_3,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_4,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_5,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_6,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_7,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_8,                          "",                                                                 28, 160,  23
+DISP_MASTER_TAG_MODE,                           "Master kaart voorgehouden\nKaarten toevoegen of verwijderen",      28, 160, 187
+DISP_MASTER_TAG_MODE_ADDED,                     "Kaart toegevoegd",                                                 28, 160, 198
+DISP_MASTER_TAG_MODE_REMOVED,                   "Kaart verwijderd",                                                 28, 160, 198
+DISP_START_METER_VALUE,                         "Begin meterstand",                                                 28, 250, 96
+DISP_ACTUAL_METER_VALUE,                        "Actuele meterstand",                                               28, 250, 126
+DISP_FOR_FUTURE_USE_9,                          "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_10,                         "",                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_11,                         "",                                                                 28, 160,  23
+DISP_PLEASE_WAIT,                               "Even geduld",                                                      29, 160,  28
+DISP_DISCLAIMER,                                "Weergave van de meetgegevens is volgens Eichrecht juridisch niet bindend", 28, 160, 226
+DISP_COMMUNICATING_WITH_VEHICLE_SUSPENDED,      "Het laden is gepauzeerd\ndoor de energieleverancier",              28, 160,  23

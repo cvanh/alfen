@@ -1,0 +1,51 @@
+LANGUAGE: it_IT
+DISP_CHARGE_POINT_BOOTING,                      "Attivazione della stazione\ndi ricarica", 					28, 160,   7
+DISP_PLEASE_HOLD_CARD_START,                    "Prego passare la carta RFID\nsopra il lettore",        	28, 160, 187
+DISP_PLEASE_HOLD_CARD_STOP,                     "Per fermare la carica\ncarta sul lettore", 				28, 160, 187
+DISP_PLEASE_REMOVE_CABLE_PLUGANDCHARGE,         "Per fermare la carica\nscollegare cavo", 					28, 160, 187
+DISP_CARD_ACCEPTED,                             "Carta RFID accettata",                						29, 160,  28
+DISP_CARD_NOT_ACCEPTED,                         "Carta non valida",                     					29, 160,  28
+DISP_PLEASE_HOLD_CARD_TO_UNLOCK,                "Per scollegare cavo\ncarta sul lettore", 					28, 160, 187
+DISP_CABLE_CONNECTED,                           "Cavo collegato\ncorrettamente",               				28, 160,  23
+DISP_CABLE_CONNECTED_TIMEOUT,                   "Disconnettere il cavo\ndalla carica",              		28, 160,  23
+DISP_PLUG_CABLE_INTO_SOCKET,                    "Prego connettere il cavo\nalla stazione di ricarica",     	28, 160, 187
+DISP_EV_CONNECTED,                              "Cavo collegato\ncorrettamente al veicolo",    				28, 160,  23
+DISP_WAIT_FOR_EVCONNECT,                        "",                                    						29, 160,  28
+DISP_WAIT_FOR_EVRECONNECT,                      "Prego connettere il\ncavo al veicolo",          			28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE,                "Stazione di ricarica pronta\nin attesa del veicolo",  		28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE_SMART_CHARGING, "Stazione di ricarica pronta\nin attesa di alimentazione",  28, 160,  23
+DISP_CHARGING,                                  "Processo di ricarica in corso",    						28, 160,  28
+DISP_END_OF_SESSION,                            "Fine della sessione",                 						29, 160,  25
+DISP_CHARGING_DURATION,                         "Durata della carica: %02d:%02dh",                			29, 160, 100
+DISP_CHARGING_CONSUMPTION,                      "Consumo: %4.2fkWh",                    					29, 160, 125
+DISP_GOODBYE,                                   "Buon viaggio!",                         					28, 160, 198
+DISP_ERROR,                                     "Codice: %03d",	                          					28, 160, 194
+DISP_RESERVED,                                  "Punto di ricarica\nriservato",               				28, 160,  23
+DISP_TEMPORARILY_OUT_OF_ORDER,                  "Temporaneamente\nfuori servizio",            				28, 160,  23
+DISP_CABLE_NOT_SUPPORTED,                       "Cavo non supportato",			            				29, 160,  28
+DISP_CABLE_NOT_SUPPORTED_REMOVE_CABLE,          "Prego disconnettere il cavo\ndalla stazione di ricarica",  28, 160, 198
+DISP_TOTAL,                                     "Consumo:",                              					28, 250,  85
+DISP_PLUG_CABLE_INTO_VEHICLE,                   "Prego connettere il cavo\nal veicolo",     				28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED,             "La presa è bloccata\nDi tenere la carta sopra il lettore qui sotto",               28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED2,            "Entrambe le prese sono bloccate\nDi tenere la carta sopra il lettore qui sotto",   28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED,           "Il socket è ora sbloccato\nDi inserire il cavo nella presa",                       28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED2,          "Entrambe le prese sono ora sbloccate\nDi inserire il cavo nella presa",            28, 160, 187
+DISP_FOR_FUTURE_USE_1,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_2,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_3,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_4,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_5,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_6,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_7,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_8,                          "",                                                                                 28, 160,  23
+DISP_MASTER_TAG_MODE,                           "Chiave master presentata\nPresentare una carta da aggiungere o rimuovere",         28, 160, 187
+DISP_MASTER_TAG_MODE_ADDED,                     "Carta aggiunta",                                                                   28, 160, 198
+DISP_MASTER_TAG_MODE_REMOVED,                   "Carta rimossa",                                                                    28, 160, 198
+DISP_START_METER_VALUE,                         "Inizia il valore del contatore",                                                   28, 250, 96
+DISP_ACTUAL_METER_VALUE,                        "Valore misuratore effettivo",                                                      28, 250, 126
+DISP_FOR_FUTURE_USE_9,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_10,                         "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_11,                         "",                                                                                 28, 160,  23
+DISP_PLEASE_WAIT,                               "attendere prego",                                                                  29, 160,  28
+DISP_DISCLAIMER,                                "I dati di misurazione mostrati non sono legalmente vincolanti secondo Eichrecht",  28, 160, 226
+DISP_COMMUNICATING_WITH_VEHICLE_SUSPENDED,      "Sessione di ricarica interrotta\ndal fornitore di energia",                        28, 160,  23

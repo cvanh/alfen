@@ -1,0 +1,51 @@
+LANGUAGE: es_ES
+DISP_CHARGE_POINT_BOOTING,                      "Iniciando punto de recarga",      													28, 160,  15
+DISP_PLEASE_HOLD_CARD_START,                    "Sitúe la tarjeta sobre el lector\nbajo la pantalla", 								28, 160, 187
+DISP_PLEASE_HOLD_CARD_STOP,                     "Para detener la recarga,\nvuelva a pasar la tarjeta", 								28, 160, 187
+DISP_PLEASE_REMOVE_CABLE_PLUGANDCHARGE,         "Para detener la recarga,\nretire el cable", 										28, 160, 187
+DISP_CARD_ACCEPTED,                             "Tarjeta aceptada",                  												29, 160,  28
+DISP_CARD_NOT_ACCEPTED,                         "Tarjeta incorrecta, por\nfavor contacte con su operador",    						28, 160,  28
+DISP_PLEASE_HOLD_CARD_TO_UNLOCK,                "Para desbloquear el cable,\nsitúe la tarjeta sobre el lector", 					28, 160, 187
+DISP_CABLE_CONNECTED,                           "Cable conectado",               													29, 160,  28
+DISP_CABLE_CONNECTED_TIMEOUT,                   "Por favor, retire\nel cable del cargador",      									28, 160,  23
+DISP_PLUG_CABLE_INTO_SOCKET,                    "Conecte el cable al enchufe",          											28, 160, 198
+DISP_EV_CONNECTED,                              "Vehículo conectado\nal punto de recarga",    										28, 160,  23
+DISP_WAIT_FOR_EVCONNECT,                        "",                                    												29, 160,  28
+DISP_WAIT_FOR_EVRECONNECT,                      "Por favor, conecte el\ncable al vehículo",     									28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE,                "Punto de recarga listo,\nesperando al vehículo",  									28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE_SMART_CHARGING, "Punto de recarga listo,\nesperando energía",  										28, 160,  23
+DISP_CHARGING,                                  "Carga en curso",        			   												29, 160,  28
+DISP_END_OF_SESSION,                            "Fin de la sesión",                     											29, 160,  25
+DISP_CHARGING_DURATION,                         "Duración: %02d:%02dh",                												29, 160, 100
+DISP_CHARGING_CONSUMPTION,                      "Energía: %4.2fkWh",                   												29, 160, 125
+DISP_GOODBYE,                                   "Buen viaje!",                       												28, 160, 198
+DISP_ERROR,                                     "Código de Erro: %03d",                         									28, 160, 194
+DISP_RESERVED,                                  "Cargador reservado",               												29, 160,  28
+DISP_TEMPORARILY_OUT_OF_ORDER,                  "No disponible",            														29, 160,  28
+DISP_CABLE_NOT_SUPPORTED,                       "Cabo incompativel",          														29, 160,  28
+DISP_CABLE_NOT_SUPPORTED_REMOVE_CABLE,          "Por favor, retire el\ncable del cargador",      									28, 160, 187
+DISP_TOTAL,                                     "Energia",                              											28, 250,  85
+DISP_PLUG_CABLE_INTO_VEHICLE,                   "Conecte el cable al vehículo",          											28, 160, 198
+DISP_PLEASE_HOLD_CARD_START_LOCKED,             "Zócalo está bloqueado\nMantenga la tarjeta sobre el lector a continuación",        28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED2,            "Ambas tomas están bloqueadas\nMantenga la tarjeta sobre el lector a continuación", 28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED,           "El zócalo está ahora desbloqueado\nEnchufe el cable en el enchufe",                28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED2,          "Ambos sockets están ahora desbloqueados\nEnchufe el cable en el enchufe",          28, 160, 187
+DISP_FOR_FUTURE_USE_1,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_2,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_3,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_4,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_5,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_6,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_7,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_8,                          "",                                                                                 28, 160,  23
+DISP_MASTER_TAG_MODE,                           "Llave maestra presentada\nDesliza una tarjeta para agregarla o eliminarla",        28, 160, 187
+DISP_MASTER_TAG_MODE_ADDED,                     "Tarjeta agregada",                                                                 28, 160, 198
+DISP_MASTER_TAG_MODE_REMOVED,                   "Tarjeta eliminada",                                                                28, 160, 198
+DISP_START_METER_VALUE,                         "Comience el valor del medidor",                                                    28, 250, 96
+DISP_ACTUAL_METER_VALUE,                        "Valor real del medidor",                                                           28, 250, 126
+DISP_FOR_FUTURE_USE_9,                          "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_10,                         "",                                                                                 28, 160,  23
+DISP_FOR_FUTURE_USE_11,                         "",                                                                                 28, 160,  23
+DISP_PLEASE_WAIT,                               "por favor espera",                                                                 29, 160,  28
+DISP_DISCLAIMER,                                "Los datos de medición mostrados no son legalmente vinculantes según Eichrecht",    28, 160, 226
+DISP_COMMUNICATING_WITH_VEHICLE_SUSPENDED,      "Sesión de carga interrumpida\npor el proveedor de energía",                        28, 160,  23

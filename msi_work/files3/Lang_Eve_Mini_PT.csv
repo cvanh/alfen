@@ -1,0 +1,51 @@
+LANGUAGE: pt_PT
+DISP_CHARGE_POINT_BOOTING,                      "Carregador a iniciar,\npor favor aguarde",      				28, 160,   7
+DISP_PLEASE_HOLD_CARD_START,                    "Por favor passe o cartão sobre\no leitor abaixo", 				28, 160, 187
+DISP_PLEASE_HOLD_CARD_STOP,                     "Para terminar, passe o cartã\no sobre o leitor", 				28, 160, 187
+DISP_PLEASE_REMOVE_CABLE_PLUGANDCHARGE,         "Para terminar\nretire o cabo", 								28, 160, 187
+DISP_CARD_ACCEPTED,                             "Cartão aceite",                  								29, 160,  28
+DISP_CARD_NOT_ACCEPTED,                         "Cartão Inválido",                     							29, 160,  28
+DISP_PLEASE_HOLD_CARD_TO_UNLOCK,                "Para desbloquear o cabo\nposicione o cartão sobre o leitor", 	28, 160, 187
+DISP_CABLE_CONNECTED,                           "Cabo correctamente ligado",               						29, 160,  28
+DISP_CABLE_CONNECTED_TIMEOUT,                   "Retire o cabo do carregador",              					28, 160,  28
+DISP_PLUG_CABLE_INTO_SOCKET,                    "Por favor, conecte\no cabo ao soquete",        				28, 160, 187
+DISP_EV_CONNECTED,                              "Veículo ligado ao carregador",    								28, 160,  23
+DISP_WAIT_FOR_EVCONNECT,                        "",                                    							29, 160,  28
+DISP_WAIT_FOR_EVRECONNECT,                      "Ligue o cabo ao\nveículo elétrico",          					28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE,                "Carregador disponível,\naguarda resposta do veículo",  		28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE_SMART_CHARGING, "Carregador disponível,\naguarda energia",  					28, 160,  23
+DISP_CHARGING,                                  "Carregamento em curso!",           							29, 160,  28
+DISP_END_OF_SESSION,                            "Fim do carregamento",                     						29, 160,  25
+DISP_CHARGING_DURATION,                         "Duração: %02d:%02dh",                							29, 160, 100
+DISP_CHARGING_CONSUMPTION,                      "Total: %4.2fkWh",                    							29, 160, 125
+DISP_GOODBYE,                                   "Boa Viagem!",                         							28, 160, 198
+DISP_ERROR,                                     "Código de Erro: %03d",                         				28, 160, 194
+DISP_RESERVED,                                  "Carregador Reservado",               							29, 160,  28
+DISP_TEMPORARILY_OUT_OF_ORDER,                  "Temporariamente fora\nde serviço",            					28, 160,  23
+DISP_CABLE_NOT_SUPPORTED,                       "Cabo incompativel",          									29, 160,  28
+DISP_CABLE_NOT_SUPPORTED_REMOVE_CABLE,          "Retire o cabo do carregador",              					28, 160, 198
+DISP_TOTAL,                                     "Total",                              							28, 250,  85
+DISP_PLUG_CABLE_INTO_VEHICLE,                   "Ligue o cabo ao veículo elétrico",          					28, 160, 198
+DISP_PLEASE_HOLD_CARD_START_LOCKED,             "Soquete está bloqueado\nSegure o cartão sobre o leitor abaixo",                28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED2,            "Ambas as tomadas estão bloqueadas\nSegure o cartão sobre o leitor abaixo",     28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED,           "A tomada está agora desbloqueada\nLigue o cabo na tomada",                     28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED2,          "Ambos os soquetes estão agora desbloqueados\nLigue o cabo na tomada",          28, 160, 187
+DISP_FOR_FUTURE_USE_1,                          "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_2,                          "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_3,                          "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_4,                          "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_5,                          "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_6,                          "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_7,                          "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_8,                          "",                                                                             28, 160,  23
+DISP_MASTER_TAG_MODE,                           "Chave mestra apresentada\nDeslize o cartão para adicionar ou remover",         28, 160, 187
+DISP_MASTER_TAG_MODE_ADDED,                     "Cartão adicionado",                                                            28, 160, 198
+DISP_MASTER_TAG_MODE_REMOVED,                   "Cartão removido",                                                              28, 160, 198
+DISP_START_METER_VALUE,                         "Valor inicial do medidor",                                                     28, 250, 96
+DISP_ACTUAL_METER_VALUE,                        "Valor real do medidor",                                                        28, 250, 126
+DISP_FOR_FUTURE_USE_9,                          "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_10,                         "",                                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_11,                         "",                                                                             28, 160,  23
+DISP_PLEASE_WAIT,                               "Por favor, espere",                                                            29, 160,  28
+DISP_DISCLAIMER,                                "exibir dados de medição não é legalmente vinculativo de acordo com Eichrecht", 28, 160, 226
+DISP_COMMUNICATING_WITH_VEHICLE_SUSPENDED,      "Sessão de cobrança interrompida\npelo fornecedor de energia",                  28, 160,  23

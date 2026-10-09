@@ -1,0 +1,51 @@
+LANGUAGE: de_DE
+DISP_CHARGE_POINT_BOOTING,                      "Ladestation startet",                 				29, 160,  15
+DISP_PLEASE_HOLD_CARD_START,                    "RFID Karte vorhalten",                				28, 160, 198
+DISP_PLEASE_HOLD_CARD_STOP,                     "Um Laden zu stoppen\nRFID Karte vorhalten",        28, 160, 187
+DISP_PLEASE_REMOVE_CABLE_PLUGANDCHARGE,         "Um Laden zu stoppen\nLadekabel abziehen",          28, 160, 187
+DISP_CARD_ACCEPTED,                             "RFID Karte akzeptiert",               				29, 160,  28
+DISP_CARD_NOT_ACCEPTED,                         "RFID Karte ungültig",                 				29, 160,  28
+DISP_PLEASE_HOLD_CARD_TO_UNLOCK,                "RFID Karte vorhalten um\nLadekabel zu entriegeln",	28, 160, 187
+DISP_CABLE_CONNECTED,                           "Ladekabel verbunden",                 				29, 160,  28
+DISP_CABLE_CONNECTED_TIMEOUT,                   "Ladekabel von der\nLadestation abziehen",      	28, 160,  23
+DISP_PLUG_CABLE_INTO_SOCKET,                    "Ladekabel einstecken",           					28, 160, 198
+DISP_EV_CONNECTED,                              "Fahrzeug mit\nLadestation verbunden",          	28, 160,  23
+DISP_WAIT_FOR_EVCONNECT,                        "",                                    				29, 160,  28
+DISP_WAIT_FOR_EVRECONNECT,                      "Ladekabel am\nFahrzeug anschließen",           	28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE,                "Ladestation wartet\nauf Fahrzeug",             	28, 160,  23
+DISP_COMMUNICATING_WITH_VEHICLE_SMART_CHARGING, "Ladestation wartet:\nLastmanagement",          	28, 160,  23
+DISP_CHARGING,                                  "Fahrzeug wird geladen",               				29, 160,  28
+DISP_END_OF_SESSION,                            "Ladevorgang beendet",                 				29, 160,  25
+DISP_CHARGING_DURATION,                         "Ladedauer: %02d:%02dh",               				29, 160, 100
+DISP_CHARGING_CONSUMPTION,                      "Stromverbrauch: %4.2fkWh",            				29, 160, 125
+DISP_GOODBYE,                                   "Gute Fahrt!",                         				28, 160, 198
+DISP_ERROR,                                     "Code: %03d",                          				28, 160, 194
+DISP_RESERVED,                                  "Ladestation reserviert",              				29, 160,  28
+DISP_TEMPORARILY_OUT_OF_ORDER,                  "Vorübergehend außer Betrieb",         				28, 160,  28
+DISP_CABLE_NOT_SUPPORTED,                       "Ladekabel inkompatibel",              				29, 160,  28
+DISP_CABLE_NOT_SUPPORTED_REMOVE_CABLE,          "Ladekabel von der\nLadestation abziehen",  		28, 160, 187
+DISP_TOTAL,          							"Gesamt",           								28, 250,  85
+DISP_PLUG_CABLE_INTO_VEHICLE,                   "Ladekabel am Fahrzeug\nanschließen",           	28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED,			    "Die Steckdose ist verriegelt\nRFID Karte vorhalten",			28, 160, 187
+DISP_PLEASE_HOLD_CARD_START_LOCKED2,			"Beide Steckdosen sind verriegelt\nRFID Karte vorhalten",		28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED,		    "Die Steckdose ist entriegelt\nLadekabel einstecken",			28, 160, 187
+DISP_PLUG_CABLE_INTO_SOCKET_UNLOCKED2,		    "Beide Steckdosen sind entriegelt\nLadekabel einstecken",		28, 160, 187
+DISP_FOR_FUTURE_USE_1,                          "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_2,                          "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_3,                          "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_4,                          "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_5,                          "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_6,                          "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_7,                          "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_8,                          "",                                                             28, 160,  23
+DISP_MASTER_TAG_MODE,                           "Masterschlüssel vorgehalten\nZum Hinzufügen oder Entfernen Karte durchziehen", 28, 160, 187
+DISP_MASTER_TAG_MODE_ADDED,                     "Karte hinzugefügt",                                            28, 160, 198
+DISP_MASTER_TAG_MODE_REMOVED,                   "Karte entfernt",                                               28, 160, 198
+DISP_START_METER_VALUE,                         "Anfangsstand",                                                 28, 250, 96
+DISP_ACTUAL_METER_VALUE,                        "Aktueller Stand",                                              28, 250, 126
+DISP_FOR_FUTURE_USE_9,                          "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_10,                         "",                                                             28, 160,  23
+DISP_FOR_FUTURE_USE_11,                         "",                                                             28, 160,  23
+DISP_PLEASE_WAIT,                               "Bitte warten",                                                 29, 160,  28
+DISP_DISCLAIMER,                                "Anzeige der Messdaten nicht eichrechtskonform - nur zur Information", 28, 160, 226
+DISP_COMMUNICATING_WITH_VEHICLE_SUSPENDED,      "Ladevorgang vom\nEnergieversorger angehalten",                 28, 160,  23
