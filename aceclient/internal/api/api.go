@@ -9,6 +9,14 @@
 //
 // Settings are a CANopen-style object dictionary: propId (u16 index) + subId
 // (u8 subindex), wire id "IDX_SUB" in hex.
+//
+// Context-aware 1:1 ports of the ICULanDevice request machinery live next to
+// the original helpers: ExecuteWebRequest + HandleUnsuccessfulRequest
+// (webrequest.go), LoginRequest/ClassicLogin + HandleUnsuccessfulLoginRequest
+// (login.go), CheckNetworkAndPing (netcheck.go), RequestCategories /
+// UpdateCategories / UpdatePropertiesInternal / StoreProperties /
+// storeProperty (properties.go), ICUProperty value semantics (value.go) and
+// CertificateStore + ValidateServerCertificate (certstore.go).
 package api
 
 import (
@@ -94,6 +102,12 @@ type Client struct {
 	RefreshToken string
 
 	HTTP *http.Client
+
+	// Identity is ICULanDevice.Identification, the name used in the
+	// user-facing messages of ExecuteWebRequest / HandleUnsuccessfulLoginRequest.
+	Identity string
+
+	sess session // ICULanDevice connection state, see session.go
 }
 
 // New builds a Client. insecureTLS skips certificate verification, which is

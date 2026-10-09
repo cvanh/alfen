@@ -1,0 +1,2306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CANopen>
+  <Object Id="1008" ParameterName="Manufacturer device name" DataType="0x0009" AccessType="ro">
+    <Title>Device Name</Title>
+  </Object>
+  <Object Id="1009" ParameterName="Manufacturer hardware version" DataType="0x0009" AccessType="ro">
+    <Title>HW Version Comm Unit</Title>
+  </Object>
+  <Object Id="100A" ParameterName="Manufacturer software version" DataType="0x0009" AccessType="ro">
+    <Title>SW Version Comm Unit</Title>
+  </Object>
+  <Object Id="2005" ParameterName="ODversion" DataType="0x0006" AccessType="ro">
+    <Title>Object Dictionary Version</Title>
+  </Object>
+  <Object Id="2050" ParameterName="sysChargePointModel" DataType="0x0009" AccessType="rw">
+    <Title>Model</Title>
+    <Option Value="Twin 3.0">
+      <Title>Twin 3.0</Title>
+    </Option>
+    <Option Value="EVe-dual">
+      <Title>EVe-dual</Title>
+    </Option>
+    <Option Value="EVe-single">
+      <Title>EVe-single</Title>
+    </Option>
+    <Option Value="Compact">
+      <Title>Compact</Title>
+    </Option>
+    <Option Value="LOLO3">
+      <Title>LOLO3</Title>
+    </Option>
+    <Option Value="ICU Eve Mini">
+      <Title>ICU Eve Mini</Title>
+    </Option>
+    <Option Value="TUBE">
+      <Title>TUBE</Title>
+    </Option>
+    <Option Value="Twin 4.0">
+      <Title>Twin 4.0</Title>
+    </Option>
+  </Object>
+  <Object Id="2051" ParameterName="sysChargePointSerialNumber" DataType="0x0009" AccessType="rw">
+    <Title>Object Number</Title>
+  </Object>
+  <Object Id="2052" ParameterName="sysBoardSerial" DataType="0x0009" AccessType="ro">
+    <Title>Ethernet MAC address</Title>
+  </Object>
+  <Object Id="2052sub1" ParameterName="sysBoardSerial:Value" DataType="0x0009" AccessType="rw">
+    <Title>Ethernet MAC address</Title>
+  </Object>
+  <Object Id="2052sub2" ParameterName="sysBoardSerial:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed Ethernet MAC address</Title>
+  </Object>
+  <Object Id="2053" ParameterName="sysChargeBoxIdentity" DataType="0x0009" AccessType="rw">
+    <Title>Customer Ident. number</Title>
+  </Object>
+  <Object Id="2054" ParameterName="sysFirmwareVersion" DataType="0x0009" AccessType="ro">
+    <Title>SW Version NFC reader</Title>
+  </Object>
+  <Object Id="2055" ParameterName="sysChargePointVendor" DataType="0x0009" AccessType="rw">
+    <Title>Sys Charge Point Vendor</Title>
+  </Object>
+  <Object Id="2056" ParameterName="sysBootCount" DataType="0x0007" AccessType="ro">
+    <Title>Boot Count</Title>
+  </Object>
+  <Object Id="2057" ParameterName="sysBootReason" DataType="0x0009" AccessType="ro">
+    <Title>Boot Reason</Title>
+  </Object>
+  <Object Id="2059" ParameterName="sysDateTime" DataType="0x001B" AccessType="rww">
+    <Title>Charger Date/Time</Title>
+  </Object>
+  <Object Id="205A" ParameterName="sysTimeZone" DataType="0x0002" AccessType="rww">
+    <Title>Time Zone</Title>
+    <Units>hours</Units>
+  </Object>
+  <Object Id="205B" ParameterName="sysDaylightSavings" DataType="0x0002" AccessType="rww">
+    <Title>Daylight Savings</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>EU</Title>
+    </Option>
+    <Option Value="2">
+      <Title>USA</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Australia</Title>
+    </Option>
+  </Object>
+  <Object Id="205Csub1" ParameterName="sysPosition:latitude" DataType="0x0008" AccessType="rw">
+    <Title>Latitude</Title>
+  </Object>
+  <Object Id="205Csub2" ParameterName="sysPosition:longitude" DataType="0x0008" AccessType="rw">
+    <Title>Longitude</Title>
+  </Object>
+  <Object Id="2522sub1" ParameterName="enabled" DataType="0x0009" AccessType="rw">
+    <Title>Enabled</Title>
+  </Object>
+  <Object Id="2522sub2" ParameterName="SlaveType" DataType="0x0009" AccessType="rw">
+    <Title>Mode</Title>
+    <Option Value="1">
+      <Title>Socomec</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Custom register mapping</Title>
+    </Option>
+  </Object>
+  <Object Id="2522sub3" ParameterName="ConnectionType" DataType="0x0009" AccessType="rw">
+    <Title>ConnectionType</Title>
+    <Option Value="0">
+      <Title>Modbus_master_TCP</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Modbus_Master_RTU</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Modbus_Master_UDP</Title>
+    </Option>
+  </Object>
+  <Object Id="2522sub1" ParameterName="enabled" DataType="0x0009" AccessType="rw">
+    <Title>Enabled</Title>
+  </Object>
+  <Object Id="2523sub2" ParameterName="SlaveType" DataType="0x0009" AccessType="rw">
+    <Title>Mode</Title>
+    <Option Value="1">
+      <Title>Socomec</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Custom register mapping</Title>
+    </Option>
+  </Object>
+  <Object Id="2523sub3" ParameterName="ConnectionType" DataType="0x0009" AccessType="rw">
+    <Title>ConnectionType</Title>
+    <Option Value="0">
+      <Title>Modbus_master_TCP</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Modbus_Master_RTU</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Modbus_Master_UDP</Title>
+    </Option>
+  </Object>
+  <Object Id="2061sub1" ParameterName="sysIntensity:auto" DataType="0x0002" AccessType="rw">
+    <Title>Automatically Fade Leds</Title>
+  </Object>
+  <Object Id="2061sub2" ParameterName="sysIntensity:intensity" DataType="0x0002" AccessType="rw">
+    <Title>Led Light intensity</Title>
+  </Object>
+  <Object Id="2062" ParameterName="sysMaxStationCurrent" DataType="0x0008" AccessType="rw">
+    <Title>Automat</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2063" ParameterName="sysPlugAndChargeIdentifier" DataType="0x0009" AccessType="rww">
+    <Title>Plug/Charge Id</Title>
+  </Object>
+  <Object Id="2064" ParameterName="sysLoadBalancingMode" DataType="0x0002" AccessType="rww">
+    <Title>Load Balancing Feature</Title>
+    <Option Value="0">
+      <Title>Static and Active Load Balancing Off</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Static On - Active Off</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Static Off - Active On</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Static and Active Load Balancing On</Title>
+    </Option>
+  </Object>
+  <Object Id="2066" ParameterName="sysStatusFlags" DataType="0x0007" AccessType="rw">
+    <Title>System Status</Title>
+  </Object>
+  <Object Id="2067" ParameterName="sysMaxInstallationCurrent" DataType="0x0008" AccessType="rw">
+    <Title>Maximum Installation Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2068" ParameterName="sysActiveSafeCurrent" DataType="0x0008" AccessType="rw">
+    <Title>Load Balancing Safe Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2069" ParameterName="sysP1PhaseConnection" DataType="0x0009" AccessType="rw">
+    <Title>P1 Phase Connection</Title>
+  </Object>
+  <Object Id="206Csub1" ParameterName="sysOCPP15SmartCharging:smartChargingType" DataType="0x0002" AccessType="rww">
+    <Title>OCPP15 Smart Charging Type</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Greenflux</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Evervalis</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Cohere</Title>
+    </Option>
+    <Option Value="4">
+      <Title>EVNet</Title>
+    </Option>
+    <Option Value="5">
+      <Title>ICUConnect</Title>
+    </Option>
+  </Object>
+  <Object Id="206Csub2" ParameterName="sysOCPP15SmartCharging:minimumChargingTime" DataType="0x0006" AccessType="rw">
+    <Title>SC minimum charging time</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="206Csub3" ParameterName="sysOCPP15SmartCharging:checkTime" DataType="0x0002" AccessType="rw">
+    <Title>SC check time</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="206Csub4" ParameterName="sysOCPP15SmartCharging:measurementIntervalDefault" DataType="0x0006" AccessType="rw">
+    <Title>SC default measurement interval </Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="206Csub5" ParameterName="sysOCPP15SmartCharging:measurementIntervalMinimum" DataType="0x0006" AccessType="rw">
+    <Title>SC minimum measurement interval </Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="206Csub6" ParameterName="sysOCPP15SmartCharging:measurementIntervalMaximum" DataType="0x0006" AccessType="rw">
+    <Title>SC maximum measurement interval </Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="206Csub7" ParameterName="sysOCPP15SmartCharging:measurementCurrentPerPhase" DataType="0x0002" AccessType="rw">
+    <Title>SC measurement per phase</Title>
+    <Option Value="0">
+      <Title>No</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Yes</Title>
+    </Option>
+  </Object>
+  <Object Id="206E" ParameterName="sysTimeZoneMinutes" DataType="0x0002" AccessType="rw">
+    <Title>Time Zone</Title>
+    <Units>minutes</Units>
+  </Object>
+  <Object Id="206F" ParameterName="sysSmartMeterIncludesEV" DataType="0x0005" AccessType="rw">
+    <Title>Received measurement</Title>
+    <Option Value="0">
+      <Title>Exclude charging EV</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Include charging EV</Title>
+    </Option>
+  </Object>
+  <Object Id="2072sub1" ParameterName="commDHCPaddress:Value" DataType="0x0009" AccessType="rw">
+    <Title>DHCP server Address</Title>
+  </Object>
+  <Object Id="2072sub2" ParameterName="commDHCPaddress:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed DHCP server Address</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="2073sub1" ParameterName="commNetMask:Value" DataType="0x0009" AccessType="rw">
+    <Title>Netmask</Title>
+  </Object>
+  <Object Id="2073sub2" ParameterName="commNetMask:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed Netmask</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="2074sub1" ParameterName="commGWaddress:Value" DataType="0x0009" AccessType="rw">
+    <Title>Gateway address</Title>
+  </Object>
+  <Object Id="2074sub2" ParameterName="commGWaddress:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed Gateway address</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="2075" ParameterName="commIPaddress" DataType="0x0009" AccessType="rw">
+    <Title>IP Address</Title>
+  </Object>
+  <Object Id="2075sub1" ParameterName="commIPaddress:Value" DataType="0x0009" AccessType="rw">
+    <Title>IP Address</Title>
+  </Object>
+  <Object Id="2075sub2" ParameterName="commIPaddress:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed IP Address</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="2076" ParameterName="commBackOfficeShortName" DataType="0x0009" AccessType="rw">
+    <Title>Authorization</Title>
+  </Object>
+  <Object Id="2077" ParameterName="commConnectMethod" DataType="0x0002" AccessType="rw">
+    <Title>Connect Method</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Wired</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Mobile</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Autodetect</Title>
+    </Option>
+  </Object>
+  <Object Id="2070" ParameterName="sysRcdActionImmediate" DataType="0x0005" AccessType="rww">
+    <Title>6mA Detect Response</Title>
+    <Option Value="0">
+      <Title>Smart</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Immediate</Title>
+    </Option>
+  </Object>
+  <Object Id="2071sub1" ParameterName="commBackOfficeURLwired:ServerDomainAndPort" DataType="0x0009" AccessType="rw">
+    <Title>Server Domain And Port Wired</Title>
+  </Object>
+  <Object Id="2071sub2" ParameterName="commBackOfficeURLwired:ServerPath" DataType="0x0009" AccessType="rw">
+    <Title>Server Path Wired</Title>
+  </Object>
+  <Object Id="2078sub1" ParameterName="commBackOfficeURL:ServerDomainAndPort" DataType="0x0009" AccessType="rw">
+    <Title>Server Domain And Port</Title>
+  </Object>
+  <Object Id="2078sub2" ParameterName="commBackOfficeURL:ServerPath" DataType="0x0009" AccessType="rw">
+    <Title>Server Path</Title>
+  </Object>
+  <Object Id="2079" ParameterName="commDNS1" DataType="0x0009" AccessType="rw">
+    <Title>DNS 1</Title>
+  </Object>
+  <Object Id="2079sub1" ParameterName="commDNS1:Value" DataType="0x0009" AccessType="rw">
+    <Title>DNS 1</Title>
+  </Object>
+  <Object Id="2079sub2" ParameterName="commDNS1:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed DNS 1</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="207Asub1" ParameterName="commDHCPaddress2:Value" DataType="0x0009" AccessType="rw">
+    <Title>DHCP server Address 2</Title>
+  </Object>
+  <Object Id="207Asub2" ParameterName="commDHCPaddress2:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed DHCP server Address 2</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="207Bsub1" ParameterName="commNetMask2:Value" DataType="0x0009" AccessType="rw">
+    <Title>Netmask 2</Title>
+  </Object>
+  <Object Id="207Bsub2" ParameterName="commNetMask2:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed Netmask 2</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="207Csub1" ParameterName="commGWaddress2:Value" DataType="0x0009" AccessType="rw">
+    <Title>Gateway address 2</Title>
+  </Object>
+  <Object Id="207Csub2" ParameterName="commGWaddress2:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed Gateway address 2</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="207D" ParameterName="commIPaddress2" DataType="0x0009" AccessType="rw">
+    <Title>IP Address 2</Title>
+  </Object>
+  <Object Id="207Dsub1" ParameterName="commIPaddress2:Value" DataType="0x0009" AccessType="rw">
+    <Title>IP Address 2</Title>
+  </Object>
+  <Object Id="207Dsub2" ParameterName="commIPaddress2:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed IP Address 2</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="207E" ParameterName="commDNS2_1" DataType="0x0009" AccessType="rw">
+    <Title>DNS2 1</Title>
+  </Object>
+  <Object Id="207Esub1" ParameterName="commDNS2_1:Value" DataType="0x0009" AccessType="rw">
+    <Title>DNS2 1</Title>
+  </Object>
+  <Object Id="207Esub2" ParameterName="commDNS1_1:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed DNS2 1</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="207F" ParameterName="commDNS2_2" DataType="0x0009" AccessType="rw">
+    <Title>DNS2 2</Title>
+  </Object>
+  <Object Id="207Fsub1" ParameterName="commDNS2_2:Value" DataType="0x0009" AccessType="rw">
+    <Title>DNS2 2</Title>
+  </Object>
+  <Object Id="207Fsub2" ParameterName="commDNS2_2:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed DNS2 2</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="2080" ParameterName="commDNS2" DataType="0x0009" AccessType="rw">
+    <Title>DNS 2</Title>
+  </Object>
+  <Object Id="2080sub1" ParameterName="commDNS2:Value" DataType="0x0009" AccessType="rw">
+    <Title>DNS 2</Title>
+  </Object>
+  <Object Id="2080sub2" ParameterName="commDNS2:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed DNS 2</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="2081" ParameterName="commProtocolName" DataType="0x0009" AccessType="rw">
+    <Title>Protocol Name</Title>
+  </Object>
+  <Object Id="2082" ParameterName="commProtocolVersion" DataType="0x0009" AccessType="rw">
+    <Title>Protocol Version</Title>
+  </Object>
+  <Object Id="2083" ParameterName="commListenerIPaddress" DataType="0x0009" AccessType="rw">
+    <Title>Listener IP Address</Title>
+  </Object>
+  <Object Id="2084" ParameterName="commListenerPort" DataType="0x0006" AccessType="rw">
+    <Title>Listener Port</Title>
+  </Object>
+  <Object Id="2085" ParameterName="commDefaultHeartBeatInterval" DataType="0x0004" AccessType="rw">
+    <Title>Heartbeat Interval</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2086" ParameterName="commActualHeartBeatInterval" DataType="0x0004" AccessType="ro">
+    <Title>Actual Heartbeat Interval</Title>
+    <Units>s</Units>
+  </Object>
+  <Object Id="2087" ParameterName="commMeteringInterval" DataType="0x0004" AccessType="rw">
+    <Title>Metering Interval</Title>
+  </Object>
+  <Object Id="2088" ParameterName="commMeteringTransmissionMode" DataType="0x0002" AccessType="rw">
+    <Title>Metering Transmission Mode</Title>
+    <Option Value="0">
+      <Title>At The End Of A Transaction</Title>
+    </Option>
+    <Option Value="1">
+      <Title>During A Transaction</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Always</Title>
+    </Option>
+  </Object>
+  <Object Id="2089" ParameterName="commMeteringAlignment" DataType="0x0002" AccessType="rw">
+    <Title>Metering Alignment</Title>
+    <Option Value="0">
+      <Title>Transaction Start</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Clock Aligned</Title>
+    </Option>
+  </Object>
+  <Object Id="208A" ParameterName="commPingPongInterval" DataType="0x0004" AccessType="rw">
+    <Title>PingPong Interval</Title>
+  </Object>
+  <Object Id="2090" ParameterName="commMeteringFinalDelivery" DataType="0x0002" AccessType="rw">
+    <Title>Final Delivery</Title>
+    <Option Value="0">
+      <Title>Full</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Undelivered Only </Title>
+    </Option>
+  </Object>
+  <Object Id="2091" ParameterName="commMeteringMaxValues" DataType="0x0002" AccessType="rw">
+    <Title>Max Metering Values</Title>
+  </Object>
+  <Object Id="2092" ParameterName="commOptionalMeteringInterval" DataType="0x0003" AccessType="rw">
+    <Title>Metering Interval [Optional]</Title>
+  </Object>
+  <Object Id="2093" ParameterName="commSendStationStatus" DataType="0x0002" AccessType="rw">
+    <Title>Send Station Status</Title>
+    <Option Value="0">
+      <Title>No</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Yes</Title>
+    </Option>
+  </Object>
+  <Object Id="2094" ParameterName="commConcurrentTxAction" DataType="0x0002" AccessType="rw">
+    <Title>Concurrent Tx Action</Title>
+  </Object>
+  <Object Id="2100" ParameterName="gprsAPNname" DataType="0x0009" AccessType="rw">
+    <Title>GPRS APN Name</Title>
+  </Object>
+  <Object Id="2101" ParameterName="gprsAPNuser" DataType="0x0009" AccessType="rw">
+    <Title>GPRS APN User</Title>
+  </Object>
+  <Object Id="2102" ParameterName="gprsAPNpassword" DataType="0x0009" AccessType="rw">
+    <Title>GPRS APN Password</Title>
+  </Object>
+  <Object Id="2103" ParameterName="gprsSIMpin" DataType="0x0009" AccessType="rw">
+    <Title>GPRS SIM Pin</Title>
+  </Object>
+  <Object Id="2104" ParameterName="gprsSIMimsi" DataType="0x0009" AccessType="ro">
+    <Title>GPRS SIM IMSI</Title>
+  </Object>
+  <Object Id="2105" ParameterName="gprsSIMiccid" DataType="0x0009" AccessType="ro">
+    <Title>GPRS SIM ICCID</Title>
+  </Object>
+  <Object Id="2106" ParameterName="gprsConnectDelay" DataType="0x0002" AccessType="rw">
+    <Title>GPRS Connect Delay</Title>
+  </Object>
+  <Object Id="2107" ParameterName="gprsConnectAttempts" DataType="0x0002" AccessType="rw">
+    <Title>GPRS Connect Attempts</Title>
+  </Object>
+  <Object Id="2108" ParameterName="gprsConnectRetryBehaviour" DataType="0x0002" AccessType="rw">
+    <Title>GPRS Connect</Title>
+    <Option Value="0">
+      <Title>Immediate</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Progressive Delay</Title>
+    </Option>
+  </Object>
+  <Object Id="2109" ParameterName="gprsBand" DataType="0x0002" AccessType="rw">
+    <Title>GPRS Band</Title>
+    <Option Value="0">
+      <Title>Automatic</Title>
+    </Option>
+    <Option Value="1">
+      <Title>900 MHz</Title>
+    </Option>
+    <Option Value="2">
+      <Title>1800 MHz</Title>
+    </Option>
+    <Option Value="3">
+      <Title>1900 MHz</Title>
+    </Option>
+  </Object>
+  <Object Id="2110" ParameterName="gprsSignalStrength" DataType="0x0003" AccessType="ro">
+    <Title>GPRS Signal Strength</Title>
+  </Object>
+  <Object Id="2111" ParameterName="gprsWeakSignalThreshold" DataType="0x0003" AccessType="ro">
+    <Title>Weak Signal</Title>
+    <Units>dBm</Units>
+  </Object>
+  <Object Id="2112" ParameterName="gprsProvider" DataType="0x0009" AccessType="ro">
+    <Title>Network Operator</Title>
+  </Object>
+  <Object Id="2125" ParameterName="mainSocketType" DataType="0x0002" AccessType="rw">
+    <Title>Socket Type 1</Title>
+    <Option Value="0">
+      <Title>Fixed Cable</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Balz / Mennekes</Title>
+    </Option>
+    <Option Value="2">
+      <Title>FCT</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Schuko</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Fixed cable type 1</Title>
+    </Option>
+    <Option Value="5">
+      <Title>Fixed cable type 2</Title>
+    </Option>
+    <Option Value="6">
+      <Title>Fixed cable CCS</Title>
+    </Option>
+    <Option Value="7">
+      <Title>Fixed cable ChaDeMo</Title>
+    </Option>
+  </Object>
+  <Object Id="3125" ParameterName="mainSocketType" DataType="0x0002" AccessType="rw">
+    <Title>Socket Type 2</Title>
+    <Option Value="0">
+      <Title>Fixed Cable</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Balz / Mennekes</Title>
+    </Option>
+    <Option Value="2">
+      <Title>FCT</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Schuko</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Fixed cable type 1</Title>
+    </Option>
+    <Option Value="5">
+      <Title>Fixed cable type 2</Title>
+    </Option>
+    <Option Value="6">
+      <Title>Fixed cable CCS</Title>
+    </Option>
+    <Option Value="7">
+      <Title>Fixed cable ChaDeMo</Title>
+    </Option>
+  </Object>
+  <Object Id="2126" ParameterName="mainAuthorizationMethod" DataType="0x0002" AccessType="rw">
+    <Title>Authentication</Title>
+    <Option Value="0">
+      <Title>Plug &amp; Charge</Title>
+    </Option>
+    <Option Value="1">
+      <Title>RFID Reader</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Communication Unit</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Button</Title>
+    </Option>
+  </Object>
+  <Object Id="2127" ParameterName="mainOfflineNFCAuthorization" DataType="0x0002" AccessType="rw">
+    <Title>Offline RFID Authorization</Title>
+    <Option Value="0">
+      <Title>Refuse</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Accept</Title>
+    </Option>
+  </Object>
+  <Object Id="2128" ParameterName="mainStartMaxCurrent" DataType="0x0008" AccessType="rw">
+    <Title>Start Max Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2129" ParameterName="mainNormalMaxCurrent" DataType="0x0008" AccessType="rw">
+    <Title>Maximum Current 1</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="212A" ParameterName="mainExternalMaxCurrent" DataType="0x0008" AccessType="rw">
+    <Title>Main External Maximum Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="212B" ParameterName="mainLoadBalancingMaxCurrent" DataType="0x0008" AccessType="ro">
+    <Title>Load Balancing Maximum Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="212C" ParameterName="mainActiveMaxCurrent" DataType="0x0008" AccessType="ro">
+    <Title>Main Active Maximum Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="212D" ParameterName="mainP1BalancingMaxCurrent" DataType="0x0008" AccessType="ro">
+    <Title>P1 Balancing Maximum Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2130" ParameterName="mainSimplifiedMaxCurrent" DataType="0x0008" AccessType="rw">
+    <Title>Simplified Max Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2131" ParameterName="mainStartupDelay" DataType="0x0002" AccessType="rw">
+    <Title>Start-up Delay</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2132" ParameterName="mainSwitchErrorTime" DataType="0x0003" AccessType="rw">
+    <Title>Main Switch Error Time</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2133" ParameterName="mainCurrentErrorTime" DataType="0x0003" AccessType="rw">
+    <Title>Main Current Error Time</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2134" ParameterName="mainHFContactorSwitchTime" DataType="0x0003" AccessType="rw">
+    <Title>Main HF Contactor Switch Time</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2135" ParameterName="mainEVConnectTimeout" DataType="0x0003" AccessType="rw">
+    <Title>Connect Time-out</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2136" ParameterName="mainEVDisconnectTimeout" DataType="0x0003" AccessType="rw">
+    <Title>Disconnect Time-out</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2137" ParameterName="mainEVDisconnectAction" DataType="0x0002" AccessType="rw">
+    <Title>Disconnect Action</Title>
+    <Option Value="0">
+      <Title>Continue</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Abort Lock</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Abort Unlock</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Abort Unlock When Offline</Title>
+    </Option>
+  </Object>
+  <Object Id="2138" ParameterName="mainNFCreaderType" DataType="0x0002" AccessType="rw">
+    <Title>Type</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>miFrame Easy</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Alfen</Title>
+    </Option>
+  </Object>
+  <Object Id="2139" ParameterName="mainNFCreaderScanInterval" DataType="0x0003" AccessType="rw">
+    <Title>RFID Scan Interval</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="213A" ParameterName="mainNFCreaderModel" DataType="0x0009" AccessType="ro">
+    <Title>Main NFC Reader Model</Title>
+  </Object>
+  <Object Id="213B" ParameterName="mainWhiteListEnabled" DataType="0x0002" AccessType="rw">
+    <Title>White List Authorization</Title>
+    <Option Value="0">
+      <Title>White List disabled</Title>
+    </Option>
+    <Option Value="1">
+      <Title>White List enabled</Title>
+    </Option>
+  </Object>
+  <Object Id="2140" ParameterName="mainNFCreaderTagDelay" DataType="0x0003" AccessType="rw">
+    <Title>RFID Tag Delay</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2142" ParameterName="mainBuzzerTime" DataType="0x0003" AccessType="rw">
+    <Title>Buzzer Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2143" ParameterName="mainBuzzerErrorTime" DataType="0x0003" AccessType="rw">
+    <Title>Buzzer Error Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2144" ParameterName="mainBuzzerErrorCount" DataType="0x0002" AccessType="rw">
+    <Title>Buzzer Error Count</Title>
+  </Object>
+  <Object Id="2145" ParameterName="mainPWMStartTime" DataType="0x0006" AccessType="rw">
+    <Title>PWM Start Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2146" ParameterName="mainPWMWaitTime" DataType="0x0006" AccessType="rw">
+    <Title>PWM Wait Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2147" ParameterName="mainPWMTerminateTime" DataType="0x0006" AccessType="rw">
+    <Title>PWM Terminate Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2148" ParameterName="mainPWMWakeUpTime" DataType="0x0006" AccessType="rw">
+    <Title>PWM Wake Up Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2149" ParameterName="mainPWMWakeUpDuration" DataType="0x0006" AccessType="rw">
+    <Title>PWM Wake Up Duration</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2150" ParameterName="mainPWMStateB1Time" DataType="0x0006" AccessType="rw">
+    <Title>PWM State B1 Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2151" ParameterName="mainChargingTriacStartTime" DataType="0x0006" AccessType="rw">
+    <Title>Triac Start Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2152" ParameterName="mainChargingTriacKeepTime" DataType="0x0006" AccessType="rw">
+    <Title>Triac Keep Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2153" ParameterName="mainChargingMaxTimeToOpenS2" DataType="0x0006" AccessType="rw">
+    <Title>Max Time S2</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2154" ParameterName="mainChargingOutputVoltageCheckTime" DataType="0x0006" AccessType="rw">
+    <Title>O/P Voltage Check Time</Title>
+    <Units>msec</Units>
+  </Object>
+  <Object Id="2155" ParameterName="mainChargingMaxRestarts" DataType="0x0005" AccessType="rw">
+    <Title>Max Restarts</Title>
+  </Object>
+  <Object Id="2156" ParameterName="mainErrorMessageTime" DataType="0x0005" AccessType="rw">
+    <Title>Error Message Time</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2159" ParameterName="mainZEready" DataType="0x0005" AccessType="rw">
+    <Title>ZE Ready</Title>
+    <Option Value="0">
+      <Title>No</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Yes</Title>
+    </Option>
+  </Object>
+  <Object Id="215A" ParameterName="mainPartySwitchDelay" DataType="0x0006" AccessType="rw">
+    <Title>Party Switch Delay</Title>
+    <Units>ms</Units>
+  </Object>
+  <Object Id="215B" ParameterName="mainControlPilotFilter" DataType="0x0005" AccessType="rw">
+    <Title>Control Pilot Filter</Title>
+  </Object>
+  <Object Id="215C" ParameterName="mainCheckExternalRCB" DataType="0x0005" AccessType="rw">
+    <Title>RCB position input</Title>
+  </Object>
+  <Object Id="216A" ParameterName="mainEichrechtEnabled" DataType="0x0005" AccessType="rw">
+    <Title>Eichrecht enabled</Title>
+    <Option Value="0">
+      <Title>No</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Yes</Title>
+    </Option>
+  </Object>
+  <Object Id="2620" ParameterName="signedenergydataincludepublickey" DataType="0x0005" AccessType="rw">
+    <Title>Signed data include public key</Title>
+    <Option Value="0">
+      <Title>Never</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Once per transaction</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Every meter value</Title>
+    </Option>
+  </Object>
+  <Object Id="2621" ParameterName="stoptxincludesignedalignedenergydata" DataType="0x0005" AccessType="rw">
+    <Title>Stop tx include signed data</Title>
+  </Object>
+  <Object Id="2170sub3" ParameterName="mainRequest:LocalDBRequest" DataType="0x0005" AccessType="rw">
+    <Title>Transaction Database</Title>
+    <Option Value="2">
+      <Title>Clear</Title>
+    </Option>
+  </Object>
+  <Object Id="2170sub4" ParameterName="mainRequest:ResetRequest" DataType="0x0005" AccessType="rw">
+    <Title>Button</Title>
+    <Option Value="2">
+      <Title>Reboot</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Reset Firmware</Title>
+    </Option>
+  </Object>
+  <Object Id="2180sub1" ParameterName="SCN_NetworkName" DataType="0x0009" AccessType="rw">
+    <Title>SCN Network Name</Title>
+  </Object>
+  <Object Id="2180sub2" ParameterName="SCN_SocketId" DataType="0x0005" AccessType="rw">
+    <Title>SCN ID </Title>
+  </Object>
+  <Object Id="2180sub3" ParameterName="SCN_NumberOfSockets" DataType="0x0005" AccessType="rw">
+    <Title>SCN Total Socket Count</Title>
+  </Object>
+  <Object Id="2180sub4" ParameterName="SCN_AlternatingPeriod" DataType="0x0006" AccessType="rw">
+    <Title>SCN Alternating period</Title>
+    <Units>s</Units>
+  </Object>
+  <Object Id="2180sub5" ParameterName="SCN_MaxStaticAvailableCurrent" DataType="0x0006" AccessType="rw">
+    <Title>SCN Total Maximum Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2180sub6" ParameterName="SCN_UnconnectedSafeCurrent" DataType="0x0006" AccessType="rw">
+    <Title>SCN Safe Current</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2180sub7" ParameterName="SCN_PhaseMapping1" DataType="0x0005" AccessType="rw">
+    <Title>SCN Phase Mapping Socket 1</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>L1</Title>
+    </Option>
+    <Option Value="2">
+      <Title>L2</Title>
+    </Option>
+    <Option Value="3">
+      <Title>L3</Title>
+    </Option>
+    <Option Value="4">
+      <Title>L1L2L3</Title>
+    </Option>
+    <Option Value="5">
+      <Title>L1L3L2</Title>
+    </Option>
+    <Option Value="6">
+      <Title>L2L1L3</Title>
+    </Option>
+    <Option Value="7">
+      <Title>L2L3L1</Title>
+    </Option>
+    <Option Value="8">
+      <Title>L3L1L2</Title>
+    </Option>
+    <Option Value="9">
+      <Title>L3L2L1</Title>
+    </Option>
+  </Object>
+  <Object Id="2180sub6" ParameterName="SCN_isUnlocked" DataType="0x0005" AccessType="rw">
+    <Title>SCN IsUnlocked</Title>
+    <Option Value="0">
+      <Title>False</Title>
+    </Option>
+    <Option Value="1">
+      <Title>True</Title>
+    </Option>
+  </Object>
+  <Object Id="2180sub9" ParameterName="SCN_PhaseMapping2" DataType="0x0005" AccessType="rw">
+    <Title>SCN Phase Mapping Socket 2</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>L1</Title>
+    </Option>
+    <Option Value="2">
+      <Title>L2</Title>
+    </Option>
+    <Option Value="3">
+      <Title>L3</Title>
+    </Option>
+    <Option Value="4">
+      <Title>L1L2L3</Title>
+    </Option>
+    <Option Value="5">
+      <Title>L1L3L2</Title>
+    </Option>
+    <Option Value="6">
+      <Title>L2L1L3</Title>
+    </Option>
+    <Option Value="7">
+      <Title>L2L3L1</Title>
+    </Option>
+    <Option Value="8">
+      <Title>L3L1L2</Title>
+    </Option>
+    <Option Value="9">
+      <Title>L3L2L1</Title>
+    </Option>
+  </Object>
+  <Object Id="21B0" ParameterName="sysPEDETEnabled" DataType="0x0002" AccessType="rw">
+    <Title>Strict PE Measurement</Title>
+    <Option Value="0">
+      <Title>Disabled</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Enabled</Title>
+    </Option>
+  </Object>
+  <Object Id="2190" ParameterName="mainNFCLedEnabled" DataType="0x0002" AccessType="rw">
+    <Title>NFC and UI LED</Title>
+    <Option Value="0">
+      <Title>Disabled</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Both enabled</Title>
+    </Option>
+    <Option Value="2">
+      <Title>UI LED enabled</Title>
+    </Option>
+  </Object>
+  <Object Id="21B1" ParameterName="systargetRDP" DataType="0x0002" AccessType="rw">
+    <Title>RDP target level</Title>
+    <Option Value="0">
+      <Title>Level 0 (disabled)</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Level 1 (read protection)</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Level 2 (Full chip protection)</Title>
+    </Option>
+  </Object>
+  <Object Id="21B2" ParameterName="sysServiceEnabled" DataType="0x0002" AccessType="rw">
+    <Title>Secure Service Access</Title>
+    <Option Value="0">
+      <Title>Disabled</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Enabled</Title>
+    </Option>
+  </Object>
+  <Object Id="21B3" ParameterName="sysTempAccessExpiration" DataType="0x0008" AccessType="r">
+    <Title>Temp Access Expiration Date</Title>
+  </Object>
+  <Object Id="21B4" ParameterName="sysIsAdminPWDefault" DataType="0x0002" AccessType="r">
+    <Title>Is Default Admin Password</Title>
+    <Option Value="0">
+      <Title>Default</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Custom</Title>
+    </Option>
+  </Object>
+  <Object Id="2200" ParameterName="sensTemperatureMode" DataType="0x0002" AccessType="rw">
+    <Title>Mode</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Automatic</Title>
+    </Option>
+  </Object>
+  <Object Id="2201" ParameterName="sensTemperatureValue" DataType="0x0008" AccessType="r">
+    <Title>Value</Title>
+    <Units>℃</Units>
+  </Object>
+  <Object Id="2202" ParameterName="sensTemperatureAlarmLow" DataType="0x0008" AccessType="rw">
+    <Title>Alarm Low</Title>
+    <Units>℃</Units>
+  </Object>
+  <Object Id="2203" ParameterName="sensTemperatureAlarmHigh" DataType="0x0008" AccessType="rw">
+    <Title>Alarm High</Title>
+    <Units>℃</Units>
+  </Object>
+  <Object Id="2204" ParameterName="sensTemperatureCheckInterval" DataType="0x0003" AccessType="rw">
+    <Title>Check Interval</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2205" ParameterName="sensTemperatureLogInterval" DataType="0x0003" AccessType="rw">
+    <Title>Log Interval</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2206" ParameterName="sensAccelerometerMode" DataType="0x0002" AccessType="rw">
+    <Title>Mode</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Automatic-OFF</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Automatic-ON</Title>
+    </Option>
+  </Object>
+  <Object Id="2207" ParameterName="sensAccelerometerValueX" DataType="0x0003" AccessType="r">
+    <Title>Value X</Title>
+  </Object>
+  <Object Id="2208" ParameterName="sensAccelerometerValueY" DataType="0x0003" AccessType="r">
+    <Title>Value Y</Title>
+  </Object>
+  <Object Id="2209" ParameterName="sensAccelerometerValueZ" DataType="0x0003" AccessType="r">
+    <Title>Value Z</Title>
+  </Object>
+  <Object Id="2210" ParameterName="sensAccelerometerSetpointX" DataType="0x0003" AccessType="rw">
+    <Title>Setpoint X</Title>
+  </Object>
+  <Object Id="2211" ParameterName="sensAccelerometerSetpointY" DataType="0x0003" AccessType="rw">
+    <Title>Setpoint Y</Title>
+  </Object>
+  <Object Id="2212" ParameterName="sensAccelerometerSetpointZ" DataType="0x0003" AccessType="rw">
+    <Title>Setpoint Z</Title>
+  </Object>
+  <Object Id="2213" ParameterName="sensAccelerometerMarginX" DataType="0x0003" AccessType="rw">
+    <Title>Margin X</Title>
+  </Object>
+  <Object Id="2214" ParameterName="sensAccelerometerMarginY" DataType="0x0003" AccessType="rw">
+    <Title>Margin Y</Title>
+  </Object>
+  <Object Id="2215" ParameterName="sensAccelerometerMarginZ" DataType="0x0003" AccessType="rw">
+    <Title>Margin Z</Title>
+  </Object>
+  <Object Id="2216" ParameterName="sensAccelerometerLogInterval" DataType="0x0006" AccessType="rw">
+    <Title>Log Interval</Title>
+  </Object>
+  <Object Id="2217" ParameterName="sensEnergyMeterType" DataType="0x0002" AccessType="ro">
+    <Title>Energy Meter Type</Title>
+    <Option Value="0">
+      <Title>Serial Modbus</Title>
+    </Option>
+  </Object>
+  <Object Id="3217" ParameterName="sensEnergyMeterType2" DataType="0x0002" AccessType="ro">
+    <Title>Energy Meter Type</Title>
+    <Option Value="1">
+      <Title>Serial Modbus</Title>
+    </Option>
+  </Object>
+  <Object Id="4217" ParameterName="sensEnergyMeterType3" DataType="0x0002" AccessType="ro">
+    <Title>Protocol Selection</Title>
+    <Option Value="-1">
+      <Title>None</Title>
+    </Option>
+    <Option Value="0">
+      <Title>Serial Modbus</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Serial FKN</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Modbus TCP/IP</Title>
+    </Option>
+    <Option Value="5">
+      <Title>DSMR4.x / SMR5.0 (P1)</Title>
+    </Option>
+  </Object>
+  <Object Id="5218" ParameterName="sensEnergyMeterModbusType4" DataType="0x0002" AccessType="rw">
+    <Title>Modbus Type 3</Title>
+    <Option Value="0">
+      <Title>Pulse</Title>
+    </Option>
+    <Option Value="1">
+      <Title>ABB</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Saia</Title>
+    </Option>
+    <Option Value="5">
+      <Title>Carlo Gavazzi</Title>
+    </Option>
+    <Option Value="7">
+      <Title>IVU</Title>
+    </Option>
+    <Option Value="8">
+      <Title>DZG Reallin</Title>
+    </Option>
+    <Option Value="9">
+      <Title>Socomec</Title>
+    </Option>
+    <Option Value="10">
+      <Title>Custom</Title>
+    </Option>
+    <Option Value="11">
+      <Title>ABB EV3</Title>
+    </Option>
+    <Option Value="12">
+      <Title>EASTRON</Title>
+    </Option>
+    <Option Value="13">
+      <Title>Reallin 1P</Title>
+    </Option>
+  </Object>
+  <Object Id="2530sub1" ParameterName="OD_modbusTCPIPSlave:options" DataType="0x0002" AccessType="rw">
+    <Title>Data Source</Title>
+    <Option Value="0">
+      <Title>Meter</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Meter + EMS Monitoring</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Energy Management System</Title>
+    </Option>
+  </Object>
+  <Object Id="2218" ParameterName="sensEnergyMeterModbusType" DataType="0x0002" AccessType="rw">
+    <Title>Modbus Type 1</Title>
+    <Option Value="0">
+      <Title>Pulse</Title>
+    </Option>
+    <Option Value="1">
+      <Title>ABB</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Saia</Title>
+    </Option>
+    <Option Value="5">
+      <Title>Carlo Gavazzi</Title>
+    </Option>
+    <Option Value="7">
+      <Title>IVU</Title>
+    </Option>
+    <Option Value="8">
+      <Title>DZG DVH4013 / Reallin D3001</Title>
+    </Option>
+    <Option Value="9">
+      <Title>Socomec</Title>
+    </Option>
+  </Object>
+  <Object Id="3218" ParameterName="sensEnergyMeterModbusType2" DataType="0x0002" AccessType="rw">
+    <Title>Modbus Type 2</Title>
+    <Option Value="0">
+      <Title>Pulse</Title>
+    </Option>
+    <Option Value="1">
+      <Title>ABB</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Saia</Title>
+    </Option>
+    <Option Value="5">
+      <Title>Carlo Gavazzi</Title>
+    </Option>
+    <Option Value="7">
+      <Title>IVU</Title>
+    </Option>
+    <Option Value="8">
+      <Title>DZG DVH4013 / Reallin D3001</Title>
+    </Option>
+    <Option Value="9">
+      <Title>Socomec</Title>
+    </Option>
+  </Object>
+  <Object Id="4218" ParameterName="sensEnergyMeterModbusType3" DataType="0x0002" AccessType="rw">
+    <Title>Modbus Type 3</Title>
+    <Option Value="0">
+      <Title>Pulse</Title>
+    </Option>
+    <Option Value="1">
+      <Title>ABB</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Saia</Title>
+    </Option>
+    <Option Value="5">
+      <Title>Carlo Gavazzi</Title>
+    </Option>
+    <Option Value="7">
+      <Title>IVU</Title>
+    </Option>
+    <Option Value="8">
+      <Title>DZG DVH4013 / Reallin D3001</Title>
+    </Option>
+    <Option Value="9">
+      <Title>Socomec</Title>
+    </Option>
+  </Object>
+  <Object Id="2221sub1" ParameterName="sensEnergyMeterValues:TimeStamp" DataType="0x0008" AccessType="ro">
+    <Title>Timestamp 1</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="2221sub3" ParameterName="sensEnergyMeterValues:VoltageL1N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L1-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2221sub4" ParameterName="sensEnergyMeterValues:VoltageL2N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L2-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2221sub5" ParameterName="sensEnergyMeterValues:VoltageL3N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L3-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2221sub6" ParameterName="sensEnergyMeterValues:VoltageL1L2" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L1-L2</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2221sub7" ParameterName="sensEnergyMeterValues:VoltageL2L3" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L2-L3</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2221sub8" ParameterName="sensEnergyMeterValues:VoltageL3L1" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L3-L1</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2221sub9" ParameterName="sensEnergyMeterValues:CurrentN" DataType="0x0008" AccessType="ro">
+    <Title>Current N</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2221subA" ParameterName="sensEnergyMeterValues:CurrentL1" DataType="0x0008" AccessType="ro">
+    <Title>Current L1</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2221subB" ParameterName="sensEnergyMeterValues:CurrentL2" DataType="0x0008" AccessType="ro">
+    <Title>Current L2</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2221subC" ParameterName="sensEnergyMeterValues:CurrentL3" DataType="0x0008" AccessType="ro">
+    <Title>Current L3</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="2221sub10" ParameterName="sensEnergyMeterValues:Frequency" DataType="0x0008" AccessType="ro">
+    <Title>Frequency</Title>
+    <Units>Hz</Units>
+  </Object>
+  <Object Id="2221sub11" ParameterName="sensEnergyMeterValues:ActivePower" DataType="0x0008" AccessType="ro">
+    <Title>Active Power</Title>
+    <Units>W</Units>
+  </Object>
+  <Object Id="2221sub22" ParameterName="sensEnergyMeterValues:EnergyRealDeliveredSum" DataType="0x0008" AccessType="ro">
+    <Title>Real Delivered Power</Title>
+    <Units>kWh</Units>
+  </Object>
+  <Object Id="2221sub26" ParameterName="sensEnergyMeterValues:EnergyRealConsumedSum" DataType="0x0008" AccessType="ro">
+    <Title>Real Consumed Power</Title>
+    <Units>kWh</Units>
+  </Object>
+  <Object Id="3221sub1" ParameterName="sensEnergyMeterValues2:TimeStamp" DataType="0x0008" AccessType="ro">
+    <Title>Timestamp 1</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="3221sub3" ParameterName="sensEnergyMeterValues2:VoltageL1N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L1-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="3221sub4" ParameterName="sensEnergyMeterValues2:VoltageL2N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L2-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="3221sub5" ParameterName="sensEnergyMeterValues2:VoltageL3N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L3-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="3221sub6" ParameterName="sensEnergyMeterValues2:VoltageL1L2" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L1-L2</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="3221sub7" ParameterName="sensEnergyMeterValues2:VoltageL2L3" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L2-L3</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="3221sub8" ParameterName="sensEnergyMeterValues2:VoltageL3L1" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L3-L1</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="3221sub9" ParameterName="sensEnergyMeterValues2:CurrentN" DataType="0x0008" AccessType="ro">
+    <Title>Current N</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="3221subA" ParameterName="sensEnergyMeterValues2:CurrentL1" DataType="0x0008" AccessType="ro">
+    <Title>Current L1</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="3221subB" ParameterName="sensEnergyMeterValues2:CurrentL2" DataType="0x0008" AccessType="ro">
+    <Title>Current L2</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="3221subC" ParameterName="sensEnergyMeterValues2:CurrentL3" DataType="0x0008" AccessType="ro">
+    <Title>Current L3</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="3221sub10" ParameterName="sensEnergyMeterValues2:Frequency" DataType="0x0008" AccessType="ro">
+    <Title>Frequency</Title>
+    <Units>Hz</Units>
+  </Object>
+  <Object Id="3221sub11" ParameterName="sensEnergyMeterValues2:ActivePower" DataType="0x0008" AccessType="ro">
+    <Title>Active Power</Title>
+    <Units>W</Units>
+  </Object>
+  <Object Id="3221sub22" ParameterName="sensEnergyMeterValues2:EnergyRealDeliveredSum" DataType="0x0008" AccessType="ro">
+    <Title>Real Delivered Power</Title>
+    <Units>kWh</Units>
+  </Object>
+  <Object Id="3221sub26" ParameterName="sensEnergyMeterValues2:EnergyRealConsumedSum" DataType="0x0008" AccessType="ro">
+    <Title>Real Consumed Power</Title>
+    <Units>kWh</Units>
+  </Object>
+  <Object Id="4221sub1" ParameterName="sensEnergyMeterValues3:TimeStamp" DataType="0x0008" AccessType="ro">
+    <Title>Timestamp 1</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="4221sub3" ParameterName="sensEnergyMeterValues3:VoltageL1N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L1-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="4221sub4" ParameterName="sensEnergyMeterValues3:VoltageL2N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L2-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="4221sub5" ParameterName="sensEnergyMeterValues3:VoltageL3N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L3-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="4221sub6" ParameterName="sensEnergyMeterValues3:VoltageL1L2" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L1-L2</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="4221sub7" ParameterName="sensEnergyMeterValues3:VoltageL2L3" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L2-L3</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="4221sub8" ParameterName="sensEnergyMeterValues3:VoltageL3L1" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L3-L1</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="4221sub9" ParameterName="sensEnergyMeterValues3:CurrentN" DataType="0x0008" AccessType="ro">
+    <Title>Current N</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="4221subA" ParameterName="sensEnergyMeterValues3:CurrentL1" DataType="0x0008" AccessType="ro">
+    <Title>Current L1</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="4221subB" ParameterName="sensEnergyMeterValues3:CurrentL2" DataType="0x0008" AccessType="ro">
+    <Title>Current L2</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="4221subC" ParameterName="sensEnergyMeterValues3:CurrentL3" DataType="0x0008" AccessType="ro">
+    <Title>Current L3</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="4221sub10" ParameterName="sensEnergyMeterValues3:Frequency" DataType="0x0008" AccessType="ro">
+    <Title>Frequency</Title>
+    <Units>Hz</Units>
+  </Object>
+  <Object Id="4221sub11" ParameterName="sensEnergyMeterValues3:ActivePower" DataType="0x0008" AccessType="ro">
+    <Title>Active Power</Title>
+    <Units>W</Units>
+  </Object>
+  <Object Id="4221sub22" ParameterName="sensEnergyMeterValues3:EnergyRealDeliveredSum" DataType="0x0008" AccessType="ro">
+    <Title>Real Delivered Power</Title>
+    <Units>kWh</Units>
+  </Object>
+  <Object Id="4221sub26" ParameterName="sensEnergyMeterValues3:EnergyRealConsumedSum" DataType="0x0008" AccessType="ro">
+    <Title>Real Consumed Power</Title>
+    <Units>kWh</Units>
+  </Object>
+  <Object Id="5221sub1" ParameterName="sensEnergyMeterValues4:TimeStamp" DataType="0x0008" AccessType="ro">
+    <Title>Timestamp 1</Title>
+    <Units>sec</Units>
+  </Object>
+  <Object Id="5221sub3" ParameterName="sensEnergyMeterValues4:VoltageL1N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L1-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="5221sub4" ParameterName="sensEnergyMeterValues4:VoltageL2N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L2-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="5221sub5" ParameterName="sensEnergyMeterValues4:VoltageL3N" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L3-N</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="5221sub6" ParameterName="sensEnergyMeterValues4:VoltageL1L2" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L1-L2</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="5221sub7" ParameterName="sensEnergyMeterValues4:VoltageL2L3" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L2-L3</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="5221sub8" ParameterName="sensEnergyMeterValues4:VoltageL3L1" DataType="0x0008" AccessType="ro">
+    <Title>Voltage L3-L1</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="5221sub9" ParameterName="sensEnergyMeterValues4:CurrentN" DataType="0x0008" AccessType="ro">
+    <Title>Current N</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="5221subA" ParameterName="sensEnergyMeterValues4:CurrentL1" DataType="0x0008" AccessType="ro">
+    <Title>Current L1</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="5221subB" ParameterName="sensEnergyMeterValues4:CurrentL2" DataType="0x0008" AccessType="ro">
+    <Title>Current L2</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="5221subC" ParameterName="sensEnergyMeterValues4:CurrentL3" DataType="0x0008" AccessType="ro">
+    <Title>Current L3</Title>
+    <Units>A</Units>
+  </Object>
+  <Object Id="5221sub10" ParameterName="sensEnergyMeterValues4:Frequency" DataType="0x0008" AccessType="ro">
+    <Title>Frequency</Title>
+    <Units>Hz</Units>
+  </Object>
+  <Object Id="5221sub11" ParameterName="sensEnergyMeterValues4:ActivePower" DataType="0x0008" AccessType="ro">
+    <Title>Active Power</Title>
+    <Units>W</Units>
+  </Object>
+  <Object Id="5221sub22" ParameterName="sensEnergyMeterValues4:EnergyRealDeliveredSum" DataType="0x0008" AccessType="ro">
+    <Title>Real Delivered Power</Title>
+    <Units>kWh</Units>
+  </Object>
+  <Object Id="5221sub26" ParameterName="sensEnergyMeterValues4:EnergyRealConsumedSum" DataType="0x0008" AccessType="ro">
+    <Title>Real Consumed Power</Title>
+    <Units>kWh</Units>
+  </Object>
+  <Object Id="2224" ParameterName="sensADCVoltageCP1High" DataType="0x0008" AccessType="ro">
+    <Title>CP voltage high</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2225" ParameterName="sensADCVoltageCP1Low" DataType="0x0008" AccessType="ro">
+    <Title>CP voltage low</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2228" ParameterName="sensADCVoltageCP2High" DataType="0x0008" AccessType="ro">
+    <Title>CP2 voltage high</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2229" ParameterName="sensADCVoltageCP2Low" DataType="0x0008" AccessType="ro">
+    <Title>CP2 voltage low</Title>
+    <Units>V</Units>
+  </Object>
+  <Object Id="2231" ParameterName="sensADCResistancePP1" DataType="0x0008" AccessType="ro">
+    <Title>PP resistance</Title>
+    <Units>Ω</Units>
+  </Object>
+  <Object Id="2233" ParameterName="sensADCResistancePP2" DataType="0x0008" AccessType="ro">
+    <Title>PP2 resistance</Title>
+    <Units>Ω</Units>
+  </Object>
+  <Object Id="2247sub3" ParameterName="sensValues_CP_PP:PP" DataType="0x0003" AccessType="rwr">
+    <Title>PP resistance</Title>
+    <Units>Ω</Units>
+  </Object>
+  <Object Id="2247sub4" ParameterName="sensValues_CP_PP:DC" DataType="0x0003" AccessType="rwr">
+    <Title>PWM duty cycle</Title>
+  </Object>
+  <Object Id="2250" ParameterName="ioMotor1SetPoint" DataType="0x0005" AccessType="rw">
+    <Title>Set Position of Motor #1</Title>
+  </Object>
+  <Object Id="2251" ParameterName="ioMotor1Position" DataType="0x0005" AccessType="ro">
+    <Title>Actual Position of Motor #1</Title>
+  </Object>
+  <Object Id="2300sub1" ParameterName="ledsStateUnknown:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300sub2" ParameterName="ledsStateUnknown:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300sub3" ParameterName="ledsStateUnknown:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300sub4" ParameterName="ledsStateUnknown:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300sub5" ParameterName="ledsStateUnknown:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300sub6" ParameterName="ledsStateUnknown:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300sub7" ParameterName="ledsStateUnknown:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300sub8" ParameterName="ledsStateUnknown:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300sub9" ParameterName="ledsStateUnknown:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2300subA" ParameterName="ledsStateUnknown:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub1" ParameterName="ledsStateOff:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub2" ParameterName="ledsStateOff:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub3" ParameterName="ledsStateOff:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub4" ParameterName="ledsStateOff:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub5" ParameterName="ledsStateOff:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub6" ParameterName="ledsStateOff:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub7" ParameterName="ledsStateOff:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub8" ParameterName="ledsStateOff:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301sub9" ParameterName="ledsStateOff:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2301subA" ParameterName="ledsStateOff:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub1" ParameterName="ledsStateBooting:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub2" ParameterName="ledsStateBooting:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub3" ParameterName="ledsStateBooting:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub4" ParameterName="ledsStateBooting:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub5" ParameterName="ledsStateBooting:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub6" ParameterName="ledsStateBooting:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub7" ParameterName="ledsStateBooting:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub8" ParameterName="ledsStateBooting:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302sub9" ParameterName="ledsStateBooting:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2302subA" ParameterName="ledsStateBooting:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub1" ParameterName="ledsStateBootingCheckMains:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub2" ParameterName="ledsStateBootingCheckMains:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub3" ParameterName="ledsStateBootingCheckMains:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub4" ParameterName="ledsStateBootingCheckMains:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub5" ParameterName="ledsStateBootingCheckMains:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub6" ParameterName="ledsStateBootingCheckMains:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub7" ParameterName="ledsStateBootingCheckMains:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub8" ParameterName="ledsStateBootingCheckMains:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303sub9" ParameterName="ledsStateBootingCheckMains:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2303subA" ParameterName="ledsStateBootingCheckMains:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub1" ParameterName="ledsStateAvailable:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub2" ParameterName="ledsStateAvailable:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub3" ParameterName="ledsStateAvailable:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub4" ParameterName="ledsStateAvailable:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub5" ParameterName="ledsStateAvailable:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub6" ParameterName="ledsStateAvailable:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub7" ParameterName="ledsStateAvailable:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub8" ParameterName="ledsStateAvailable:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304sub9" ParameterName="ledsStateAvailable:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2304subA" ParameterName="ledsStateAvailable:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub1" ParameterName="ledsStatePrepAuthorising:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub2" ParameterName="ledsStatePrepAuthorising:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub3" ParameterName="ledsStatePrepAuthorising:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub4" ParameterName="ledsStatePrepAuthorising:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub5" ParameterName="ledsStatePrepAuthorising:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub6" ParameterName="ledsStatePrepAuthorising:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub7" ParameterName="ledsStatePrepAuthorising:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub8" ParameterName="ledsStatePrepAuthorising:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305sub9" ParameterName="ledsStatePrepAuthorising:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2305subA" ParameterName="ledsStatePrepAuthorising:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub1" ParameterName="ledsStatePrepAuthorised:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub2" ParameterName="ledsStatePrepAuthorised:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub3" ParameterName="ledsStatePrepAuthorised:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub4" ParameterName="ledsStatePrepAuthorised:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub5" ParameterName="ledsStatePrepAuthorised:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub6" ParameterName="ledsStatePrepAuthorised:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub7" ParameterName="ledsStatePrepAuthorised:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub8" ParameterName="ledsStatePrepAuthorised:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306sub9" ParameterName="ledsStatePrepAuthorised:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2306subA" ParameterName="ledsStatePrepAuthorised:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub1" ParameterName="ledsStatePrepCableConnected:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub2" ParameterName="ledsStatePrepCableConnected:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub3" ParameterName="ledsStatePrepCableConnected:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub4" ParameterName="ledsStatePrepCableConnected:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub5" ParameterName="ledsStatePrepCableConnected:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub6" ParameterName="ledsStatePrepCableConnected:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub7" ParameterName="ledsStatePrepCableConnected:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub8" ParameterName="ledsStatePrepCableConnected:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307sub9" ParameterName="ledsStatePrepCableConnected:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2307subA" ParameterName="ledsStatePrepCableConnected:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub1" ParameterName="ledsStatePrepEVConnected:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub2" ParameterName="ledsStatePrepEVConnected:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub3" ParameterName="ledsStatePrepEVConnected:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub4" ParameterName="ledsStatePrepEVConnected:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub5" ParameterName="ledsStatePrepEVConnected:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub6" ParameterName="ledsStatePrepEVConnected:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub7" ParameterName="ledsStatePrepEVConnected:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub8" ParameterName="ledsStatePrepEVConnected:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308sub9" ParameterName="ledsStatePrepEVConnected:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2308subA" ParameterName="ledsStatePrepEVConnected:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub1" ParameterName="ledsStateChargingPreparing:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub2" ParameterName="ledsStateChargingPreparing:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub3" ParameterName="ledsStateChargingPreparing:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub4" ParameterName="ledsStateChargingPreparing:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub5" ParameterName="ledsStateChargingPreparing:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub6" ParameterName="ledsStateChargingPreparing:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub7" ParameterName="ledsStateChargingPreparing:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub8" ParameterName="ledsStateChargingPreparing:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309sub9" ParameterName="ledsStateChargingPreparing:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2309subA" ParameterName="ledsStateChargingPreparing:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub1" ParameterName="ledsStateChargingWaitVehicle:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub2" ParameterName="ledsStateChargingWaitVehicle:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub3" ParameterName="ledsStateChargingWaitVehicle:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub4" ParameterName="ledsStateChargingWaitVehicle:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub5" ParameterName="ledsStateChargingWaitVehicle:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub6" ParameterName="ledsStateChargingWaitVehicle:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub7" ParameterName="ledsStateChargingWaitVehicle:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub8" ParameterName="ledsStateChargingWaitVehicle:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310sub9" ParameterName="ledsStateChargingWaitVehicle:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2310subA" ParameterName="ledsStateChargingWaitVehicle:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub1" ParameterName="ledsStateChargingActiveNormal:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub2" ParameterName="ledsStateChargingActiveNormal:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub3" ParameterName="ledsStateChargingActiveNormal:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub4" ParameterName="ledsStateChargingActiveNormal:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub5" ParameterName="ledsStateChargingActiveNormal:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub6" ParameterName="ledsStateChargingActiveNormal:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub7" ParameterName="ledsStateChargingActiveNormal:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub8" ParameterName="ledsStateChargingActiveNormal:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311sub9" ParameterName="ledsStateChargingActiveNormal:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2311subA" ParameterName="ledsStateChargingActiveNormal:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub1" ParameterName="ledsStateChargingActiveSimplified:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub2" ParameterName="ledsStateChargingActiveSimplified:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub3" ParameterName="ledsStateChargingActiveSimplified:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub4" ParameterName="ledsStateChargingActiveSimplified:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub5" ParameterName="ledsStateChargingActiveSimplified:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub6" ParameterName="ledsStateChargingActiveSimplified:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub7" ParameterName="ledsStateChargingActiveSimplified:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub8" ParameterName="ledsStateChargingActiveSimplified:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312sub9" ParameterName="ledsStateChargingActiveSimplified:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2312subA" ParameterName="ledsStateChargingActiveSimplified:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub1" ParameterName="ledsStateChargingSuspendedOverCurrent:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub2" ParameterName="ledsStateChargingSuspendedOverCurrent:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub3" ParameterName="ledsStateChargingSuspendedOverCurrent:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub4" ParameterName="ledsStateChargingSuspendedOverCurrent:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub5" ParameterName="ledsStateChargingSuspendedOverCurrent:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub6" ParameterName="ledsStateChargingSuspendedOverCurrent:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub7" ParameterName="ledsStateChargingSuspendedOverCurrent:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub8" ParameterName="ledsStateChargingSuspendedOverCurrent:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313sub9" ParameterName="ledsStateChargingSuspendedOverCurrent:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2313subA" ParameterName="ledsStateChargingSuspendedOverCurrent:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub1" ParameterName="ledsStateChargingSuspendedHFSwitching:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub2" ParameterName="ledsStateChargingSuspendedHFSwitching:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub3" ParameterName="ledsStateChargingSuspendedHFSwitching:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub4" ParameterName="ledsStateChargingSuspendedHFSwitching:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub5" ParameterName="ledsStateChargingSuspendedHFSwitching:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub6" ParameterName="ledsStateChargingSuspendedHFSwitching:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub7" ParameterName="ledsStateChargingSuspendedHFSwitching:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub8" ParameterName="ledsStateChargingSuspendedHFSwitching:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314sub9" ParameterName="ledsStateChargingSuspendedHFSwitching:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2314subA" ParameterName="ledsStateChargingSuspendedHFSwitching:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub1" ParameterName="ledsStateChargingSuspendedEVDisconnected:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub2" ParameterName="ledsStateChargingSuspendedEVDisconnected:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub3" ParameterName="ledsStateChargingSuspendedEVDisconnected:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub4" ParameterName="ledsStateChargingSuspendedEVDisconnected:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub5" ParameterName="ledsStateChargingSuspendedEVDisconnected:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub6" ParameterName="ledsStateChargingSuspendedEVDisconnected:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub7" ParameterName="ledsStateChargingSuspendedEVDisconnected:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub8" ParameterName="ledsStateChargingSuspendedEVDisconnected:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315sub9" ParameterName="ledsStateChargingSuspendedEVDisconnected:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2315subA" ParameterName="ledsStateChargingSuspendedEVDisconnected:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub1" ParameterName="ledsStateFinishWaitVehicle:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub2" ParameterName="ledsStateFinishWaitVehicle:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub3" ParameterName="ledsStateFinishWaitVehicle:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub4" ParameterName="ledsStateFinishWaitVehicle:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub5" ParameterName="ledsStateFinishWaitVehicle:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub6" ParameterName="ledsStateFinishWaitVehicle:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub7" ParameterName="ledsStateFinishWaitVehicle:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub8" ParameterName="ledsStateFinishWaitVehicle:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316sub9" ParameterName="ledsStateFinishWaitVehicle:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2316subA" ParameterName="ledsStateFinishWaitVehicle:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub1" ParameterName="ledsStateFinishWaitDisconnect:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub2" ParameterName="ledsStateFinishWaitDisconnect:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub3" ParameterName="ledsStateFinishWaitDisconnect:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub4" ParameterName="ledsStateFinishWaitDisconnect:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub5" ParameterName="ledsStateFinishWaitDisconnect:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub6" ParameterName="ledsStateFinishWaitDisconnect:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub7" ParameterName="ledsStateFinishWaitDisconnect:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub8" ParameterName="ledsStateFinishWaitDisconnect:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317sub9" ParameterName="ledsStateFinishWaitDisconnect:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2317subA" ParameterName="ledsStateFinishWaitDisconnect:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub1" ParameterName="ledsStateErrorProtectiveEarth:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub2" ParameterName="ledsStateErrorProtectiveEarth:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub3" ParameterName="ledsStateErrorProtectiveEarth:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub4" ParameterName="ledsStateErrorProtectiveEarth:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub5" ParameterName="ledsStateErrorProtectiveEarth:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub6" ParameterName="ledsStateErrorProtectiveEarth:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub7" ParameterName="ledsStateErrorProtectiveEarth:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub8" ParameterName="ledsStateErrorProtectiveEarth:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318sub9" ParameterName="ledsStateErrorProtectiveEarth:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2318subA" ParameterName="ledsStateErrorProtectiveEarth:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub1" ParameterName="ledsStateErrorPowerlineFault:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub2" ParameterName="ledsStateErrorPowerlineFault:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub3" ParameterName="ledsStateErrorPowerlineFault:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub4" ParameterName="ledsStateErrorPowerlineFault:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub5" ParameterName="ledsStateErrorPowerlineFault:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub6" ParameterName="ledsStateErrorPowerlineFault:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub7" ParameterName="ledsStateErrorPowerlineFault:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub8" ParameterName="ledsStateErrorPowerlineFault:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319sub9" ParameterName="ledsStateErrorPowerlineFault:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2319subA" ParameterName="ledsStateErrorPowerlineFault:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub1" ParameterName="ledsStateErrorContactorFault:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub2" ParameterName="ledsStateErrorContactorFault:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub3" ParameterName="ledsStateErrorContactorFault:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub4" ParameterName="ledsStateErrorContactorFault:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub5" ParameterName="ledsStateErrorContactorFault:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub6" ParameterName="ledsStateErrorContactorFault:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub7" ParameterName="ledsStateErrorContactorFault:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub8" ParameterName="ledsStateErrorContactorFault:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320sub9" ParameterName="ledsStateErrorContactorFault:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2320subA" ParameterName="ledsStateErrorContactorFault:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub1" ParameterName="ledsStateErrorCharging:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub2" ParameterName="ledsStateErrorCharging:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub3" ParameterName="ledsStateErrorCharging:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub4" ParameterName="ledsStateErrorCharging:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub5" ParameterName="ledsStateErrorCharging:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub6" ParameterName="ledsStateErrorCharging:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub7" ParameterName="ledsStateErrorCharging:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub8" ParameterName="ledsStateErrorCharging:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321sub9" ParameterName="ledsStateErrorCharging:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2321subA" ParameterName="ledsStateErrorCharging:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub1" ParameterName="ledsStateErrorPowerFailure:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub2" ParameterName="ledsStateErrorPowerFailure:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub3" ParameterName="ledsStateErrorPowerFailure:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub4" ParameterName="ledsStateErrorPowerFailure:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub5" ParameterName="ledsStateErrorPowerFailure:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub6" ParameterName="ledsStateErrorPowerFailure:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub7" ParameterName="ledsStateErrorPowerFailure:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub8" ParameterName="ledsStateErrorPowerFailure:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322sub9" ParameterName="ledsStateErrorPowerFailure:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2322subA" ParameterName="ledsStateErrorPowerFailure:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub1" ParameterName="ledsStateErrorTemperature:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub2" ParameterName="ledsStateErrorTemperature:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub3" ParameterName="ledsStateErrorTemperature:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub4" ParameterName="ledsStateErrorTemperature:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub5" ParameterName="ledsStateErrorTemperature:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub6" ParameterName="ledsStateErrorTemperature:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub7" ParameterName="ledsStateErrorTemperature:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub8" ParameterName="ledsStateErrorTemperature:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323sub9" ParameterName="ledsStateErrorTemperature:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2323subA" ParameterName="ledsStateErrorTemperature:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub1" ParameterName="ledsStateErrorIllegalCPValue:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub2" ParameterName="ledsStateErrorIllegalCPValue:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub3" ParameterName="ledsStateErrorIllegalCPValue:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub4" ParameterName="ledsStateErrorIllegalCPValue:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub5" ParameterName="ledsStateErrorIllegalCPValue:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub6" ParameterName="ledsStateErrorIllegalCPValue:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub7" ParameterName="ledsStateErrorIllegalCPValue:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub8" ParameterName="ledsStateErrorIllegalCPValue:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324sub9" ParameterName="ledsStateErrorIllegalCPValue:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2324subA" ParameterName="ledsStateErrorIllegalCPValue:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub1" ParameterName="ledsStateErrorIllegalPPValue:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub2" ParameterName="ledsStateErrorIllegalPPValue:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub3" ParameterName="ledsStateErrorIllegalPPValue:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub4" ParameterName="ledsStateErrorIllegalPPValue:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub5" ParameterName="ledsStateErrorIllegalPPValue:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub6" ParameterName="ledsStateErrorIllegalPPValue:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub7" ParameterName="ledsStateErrorIllegalPPValue:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub8" ParameterName="ledsStateErrorIllegalPPValue:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325sub9" ParameterName="ledsStateErrorIllegalPPValue:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2325subA" ParameterName="ledsStateErrorIllegalPPValue:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub1" ParameterName="ledsStateErrorTooManyRestarts:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub2" ParameterName="ledsStateErrorTooManyRestarts:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub3" ParameterName="ledsStateErrorTooManyRestarts:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub4" ParameterName="ledsStateErrorTooManyRestarts:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub5" ParameterName="ledsStateErrorTooManyRestarts:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub6" ParameterName="ledsStateErrorTooManyRestarts:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub7" ParameterName="ledsStateErrorTooManyRestarts:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub8" ParameterName="ledsStateErrorTooManyRestarts:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326sub9" ParameterName="ledsStateErrorTooManyRestarts:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2326subA" ParameterName="ledsStateErrorTooManyRestarts:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub1" ParameterName="ledsStateError:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub2" ParameterName="ledsStateError:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub3" ParameterName="ledsStateError:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub4" ParameterName="ledsStateError:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub5" ParameterName="ledsStateError:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub6" ParameterName="ledsStateError:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub7" ParameterName="ledsStateError:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub8" ParameterName="ledsStateError:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327sub9" ParameterName="ledsStateError:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2327subA" ParameterName="ledsStateError:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub1" ParameterName="ledsStateErrorMessage:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub2" ParameterName="ledsStateErrorMessage:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub3" ParameterName="ledsStateErrorMessage:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub4" ParameterName="ledsStateErrorMessage:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub5" ParameterName="ledsStateErrorMessage:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub6" ParameterName="ledsStateErrorMessage:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub7" ParameterName="ledsStateErrorMessage:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub8" ParameterName="ledsStateErrorMessage:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328sub9" ParameterName="ledsStateErrorMessage:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2328subA" ParameterName="ledsStateErrorMessage:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub1" ParameterName="ledsStateErrorMessageNotAuthorised:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub2" ParameterName="ledsStateErrorMessageNotAuthorised:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub3" ParameterName="ledsStateErrorMessageNotAuthorised:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub4" ParameterName="ledsStateErrorMessageNotAuthorised:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub5" ParameterName="ledsStateErrorMessageNotAuthorised:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub6" ParameterName="ledsStateErrorMessageNotAuthorised:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub7" ParameterName="ledsStateErrorMessageNotAuthorised:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub8" ParameterName="ledsStateErrorMessageNotAuthorised:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329sub9" ParameterName="ledsStateErrorMessageNotAuthorised:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2329subA" ParameterName="ledsStateErrorMessageNotAuthorised:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub1" ParameterName="ledsStateErrorMessageCableNotSupported:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub2" ParameterName="ledsStateErrorMessageCableNotSupported:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub3" ParameterName="ledsStateErrorMessageCableNotSupported:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub4" ParameterName="ledsStateErrorMessageCableNotSupported:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub5" ParameterName="ledsStateErrorMessageCableNotSupported:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub6" ParameterName="ledsStateErrorMessageCableNotSupported:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub7" ParameterName="ledsStateErrorMessageCableNotSupported:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub8" ParameterName="ledsStateErrorMessageCableNotSupported:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330sub9" ParameterName="ledsStateErrorMessageCableNotSupported:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2330subA" ParameterName="ledsStateErrorMessageCableNotSupported:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub1" ParameterName="ledsStateErrorMessageS2NotOpened:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub2" ParameterName="ledsStateErrorMessageS2NotOpened:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub3" ParameterName="ledsStateErrorMessageS2NotOpened:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub4" ParameterName="ledsStateErrorMessageS2NotOpened:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub5" ParameterName="ledsStateErrorMessageS2NotOpened:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub6" ParameterName="ledsStateErrorMessageS2NotOpened:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub7" ParameterName="ledsStateErrorMessageS2NotOpened:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub8" ParameterName="ledsStateErrorMessageS2NotOpened:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331sub9" ParameterName="ledsStateErrorMessageS2NotOpened:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2331subA" ParameterName="ledsStateErrorMessageS2NotOpened:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub1" ParameterName="ledsStateErrorMessageTimeOut:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub2" ParameterName="ledsStateErrorMessageTimeOut:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub3" ParameterName="ledsStateErrorMessageTimeOut:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub4" ParameterName="ledsStateErrorMessageTimeOut:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub5" ParameterName="ledsStateErrorMessageTimeOut:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub6" ParameterName="ledsStateErrorMessageTimeOut:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub7" ParameterName="ledsStateErrorMessageTimeOut:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub8" ParameterName="ledsStateErrorMessageTimeOut:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332sub9" ParameterName="ledsStateErrorMessageTimeOut:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2332subA" ParameterName="ledsStateErrorMessageTimeOut:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub1" ParameterName="ledsStateReserved:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub2" ParameterName="ledsStateReserved:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub3" ParameterName="ledsStateReserved:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub4" ParameterName="ledsStateReserved:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub5" ParameterName="ledsStateReserved:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub6" ParameterName="ledsStateReserved:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub7" ParameterName="ledsStateReserved:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub8" ParameterName="ledsStateReserved:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333sub9" ParameterName="ledsStateReserved:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2333subA" ParameterName="ledsStateReserved:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub1" ParameterName="ledsStateInOperative:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub2" ParameterName="ledsStateInOperative:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub3" ParameterName="ledsStateInOperative:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub4" ParameterName="ledsStateInOperative:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub5" ParameterName="ledsStateInOperative:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub6" ParameterName="ledsStateInOperative:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub7" ParameterName="ledsStateInOperative:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub8" ParameterName="ledsStateInOperative:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334sub9" ParameterName="ledsStateInOperative:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2334subA" ParameterName="ledsStateInOperative:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub1" ParameterName="ledsStateLoadBalancingLimited:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub2" ParameterName="ledsStateLoadBalancingLimited:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub3" ParameterName="ledsStateLoadBalancingLimited:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub4" ParameterName="ledsStateLoadBalancingLimited:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub5" ParameterName="ledsStateLoadBalancingLimited:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub6" ParameterName="ledsStateLoadBalancingLimited:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub7" ParameterName="ledsStateLoadBalancingLimited:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub8" ParameterName="ledsStateLoadBalancingLimited:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335sub9" ParameterName="ledsStateLoadBalancingLimited:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2335subA" ParameterName="ledsStateLoadBalancingLimited:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub1" ParameterName="ledsStateLoadBalancingForcedOff:red1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub2" ParameterName="ledsStateLoadBalancingForcedOff:green1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub3" ParameterName="ledsStateLoadBalancingForcedOff:blue1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub4" ParameterName="ledsStateLoadBalancingForcedOff:cyan1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub5" ParameterName="ledsStateLoadBalancingForcedOff:duration1" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub6" ParameterName="ledsStateLoadBalancingForcedOff:red2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub7" ParameterName="ledsStateLoadBalancingForcedOff:green2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub8" ParameterName="ledsStateLoadBalancingForcedOff:blue2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336sub9" ParameterName="ledsStateLoadBalancingForcedOff:cyan2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2336subA" ParameterName="ledsStateLoadBalancingForcedOff:duration2" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2700" ParameterName="securitySSLCACertificate" DataType="0x000F" AccessType="rw">
+    <Title>CA Certificate</Title>
+  </Object>
+  <Object Id="2701" ParameterName="securitySSLPreSharedKey" DataType="0x000F" AccessType="wo">
+    <Title>Pre Shared Key</Title>
+  </Object>
+  <Object Id="2702" ParameterName="securitySSLAuthenticationMethod" DataType="0x0005" AccessType="rw">
+    <Title>SSL Authentication Method</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>CA Certificate</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Pre Shared Key</Title>
+    </Option>
+  </Object>
+  <Object Id="2703" ParameterName="securityFeatures" DataType="0x0005" AccessType="rw">
+    <Title>Security Features: </Title>
+    <Option Value="0">
+      <Title>AUTH_DOMAIN </Title>
+    </Option>
+    <Option Value="1">
+      <Title>AUTH_EXPIRATION_DATE</Title>
+    </Option>
+    <Option Value="7">
+      <Title>Diagnostics Encryption</Title>
+    </Option>
+  </Object>
+  <Object Id="2710" ParameterName="securityAuthenticationMethod" DataType="0x0005" AccessType="rw">
+    <Title>Authentication Method</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Basic</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Digest</Title>
+    </Option>
+  </Object>
+  <Object Id="2711" ParameterName="securityAuthenticationKey" DataType="0x000F" AccessType="wo">
+    <Title>Authentication Key</Title>
+  </Object>
+  <Object Id="2712" ParameterName="securityGetDiagnosticsEncryptionKey" DataType="0x000F" AccessType="wo">
+    <Title>Get Diagnostics Encryption Key</Title>
+  </Object>
+  <Object Id="2713" ParameterName="securityFirmwareUpdateEncryptionKey" DataType="0x000F" AccessType="wo">
+    <Title>Firmware Update Encryption Key</Title>
+  </Object>
+  <Object Id="2714" ParameterName="securityFirmwareUpdatePublicKey" DataType="0x000F" AccessType="rw">
+    <Title>Firmware Update Public Key</Title>
+  </Object>
+  <Object Id="2900" ParameterName="fileGetDiagnosticsLoglevelMask" DataType="0x0006" AccessType="rw">
+    <Title>Selection: </Title>
+    <Option Value="0">
+      <Title>Errors</Title>
+    </Option>
+    <Option Value="1">
+      <Title>User</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Communication</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Info</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Debug</Title>
+    </Option>
+  </Object>
+  <Object Id="2901" ParameterName="fileGetDiagnosticsStartDateTime" DataType="0x000F" AccessType="rw">
+    <Title> Begin Time</Title>
+  </Object>
+  <Object Id="2902" ParameterName="fileGetDiagnosticsEndDateTime" DataType="0x0007" AccessType="rw">
+    <Title>   End Time</Title>
+  </Object>
+  <Object Id="2903" ParameterName="fileGetDiagnosticsRetrieve" DataType="0x000F" AccessType="ro"/>
+  <Object Id="2910" ParameterName="fileFirmwareUpdateCommand" DataType="0x0005" AccessType="rw"/>
+  <Object Id="2911" ParameterName="fileFirmwareUpdateStatus" DataType="0x0002" AccessType="ro">
+    <Title>Firmware Update Status</Title>
+    <Option Value="0">
+      <Title>No active firmware update</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Erasing firmware buffer</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Firmware buffer erased</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Ready for upload</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Uploading firmware</Title>
+    </Option>
+    <Option Value="5">
+      <Title>Firmware upload complete, Checking</Title>
+    </Option>
+    <Option Value="6">
+      <Title>Firmware checked, waiting for system to go into service mode</Title>
+    </Option>
+    <Option Value="7">
+      <Title>System in service mode, ready for update</Title>
+    </Option>
+    <Option Value="8">
+      <Title>Update in progress</Title>
+    </Option>
+    <Option Value="9">
+      <Title>Update ready to roll</Title>
+    </Option>
+    <Option Value="10">
+      <Title>Firmware update done</Title>
+    </Option>
+    <Option Value="11">
+      <Title>CRC calculating</Title>
+    </Option>
+    <Option Value="12">
+      <Title>CRC calculated</Title>
+    </Option>
+    <Option Value="-1">
+      <Title>Error during upload</Title>
+    </Option>
+    <Option Value="-2">
+      <Title>Error during update</Title>
+    </Option>
+    <Option Value="-3">
+      <Title>Executing rollback</Title>
+    </Option>
+    <Option Value="-4">
+      <Title>Rolled back to previous firmware version</Title>
+    </Option>
+  </Object>
+  <Object Id="2912" ParameterName="fileFirmwareUpdateUpload" DataType="0x000F" AccessType="wo">
+    <Title>Update Firmware</Title>
+  </Object>
+  <Object Id="2913" ParameterName="fileWhiteList" DataType="0x000F" AccessType="rw">
+    <Title>White List</Title>
+  </Object>
+  <Object Id="2914" ParameterName="fileTransactions" DataType="0x000F" AccessType="ro"/>
+  <Object Id="2915" ParameterName="fileFirmwareBufferCRC" DataType="0x0006" AccessType="ro"/>
+  <Object Id="3261" ParameterName="dispDisplayItemsEnabled" DataType="0x0009" AccessType="rw">
+    <Title>Display Items</Title>
+    <Option Value="0">
+      <Title>Show None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Show Date-Time</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Show Station Power</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Show Date-Time and Power</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Show Identity</Title>
+    </Option>
+    <Option Value="5">
+      <Title>Show Date-Time and Identity</Title>
+    </Option>
+    <Option Value="6">
+      <Title>Show Power and Identity</Title>
+    </Option>
+    <Option Value="7">
+      <Title>Show All</Title>
+    </Option>
+  </Object>
+  <Object Id="216C" ParameterName="mainP1PortUse" DataType="0x0002" AccessType="rw">
+    <Title>Direct external suspend signal</Title>
+    <Option Value="0">
+      <Title>Not allowed</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Allowed, suspend when closed</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Allowed, suspend when open</Title>
+    </Option>
+  </Object>
+  <Object Id="2189" ParameterName="mainMaxAllowedPhases" DataType="0x0007" AccessType="rw">
+    <Title>Maximum Allowed Phases</Title>
+    <Option Value="1">
+      <Title>1-Phase</Title>
+    </Option>
+    <Option Value="3">
+      <Title>3-Phase</Title>
+    </Option>
+  </Object>
+  <Object Id="2574" ParameterName="modbusSmartMeterConfig:wordOrder" DataType="0x0009" AccessType="rw">
+    <Title>Word Order</Title>
+    <Option Value="0">
+      <Title>High to Low</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Low to High</Title>
+    </Option>
+  </Object>
+  <Object Id="2574sub3" ParameterName="modbusSmartMeterConfig:modbusFunctionCode" DataType="0x0005" AccessType="rw">
+    <Title>Function Code</Title>
+    <Option Value="3">
+      <Title>Holding Registers</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Input Registers</Title>
+    </Option>
+  </Object>
+  <Object Id="2575" ParameterName="modbusSmartMeterUart:baudrate" DataType="0x0007" AccessType="rw">
+    <Title>Baudrate</Title>
+    <Option Value="2400">
+      <Title>2400</Title>
+    </Option>
+    <Option Value="4800">
+      <Title>4800</Title>
+    </Option>
+    <Option Value="9600">
+      <Title>9600</Title>
+    </Option>
+    <Option Value="14400">
+      <Title>14400</Title>
+    </Option>
+    <Option Value="19200">
+      <Title>19200</Title>
+    </Option>
+    <Option Value="38400">
+      <Title>38400</Title>
+    </Option>
+    <Option Value="57600">
+      <Title>57600</Title>
+    </Option>
+    <Option Value="115200">
+      <Title>115200</Title>
+    </Option>
+    <Option Value="128000">
+      <Title>128000</Title>
+    </Option>
+    <Option Value="256000">
+      <Title>256000</Title>
+    </Option>
+  </Object>
+  <Object Id="2575sub1" ParameterName="modbusSmartMeterUart:parity" DataType="0x0005" AccessType="rw">
+    <Title>Parity</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Even</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Odd</Title>
+    </Option>
+  </Object>
+  <Object Id="3284" ParameterName="sysWifiEnabled" DataType="0x0005" AccessType="rw">
+    <Title>WiFi Enabled</Title>
+    <Option Value="0">
+      <Title>Disabled</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Enabled</Title>
+    </Option>
+    <Option Value="0xFF">
+      <Title>Not initialized</Title>
+    </Option>
+  </Object>
+  <Object Id="3286sub1" ParameterName="commNetMask3:Value" DataType="0x0009" AccessType="rw">
+    <Title>Netmask</Title>
+  </Object>
+  <Object Id="3297sub1" ParameterName="commNetMask4:Value" DataType="0x0009" AccessType="rw">
+    <Title>Access point Netmask</Title>
+  </Object>
+  <Object Id="3287sub1" ParameterName="commGWaddress3:Value" DataType="0x0009" AccessType="rw">
+    <Title>Gateway Address</Title>
+  </Object>
+  <Object Id="3298sub1" ParameterName="commGWaddress4:Value" DataType="0x0009" AccessType="rw">
+    <Title>Access point Gateway Address</Title>
+  </Object>
+  <Object Id="3285" ParameterName="commIPaddress3" DataType="0x0009" AccessType="rw">
+    <Title>IP Address</Title>
+  </Object>
+  <Object Id="3296sub1" ParameterName="commIPaddress4" DataType="0x0009" AccessType="rw">
+    <Title>Access point IP Address</Title>
+  </Object>
+  <Object Id="3285sub1" ParameterName="commIPaddress3:Value" DataType="0x0009" AccessType="rw">
+    <Title>IP Address</Title>
+  </Object>
+  <Object Id="3285sub2" ParameterName="commIPaddress3:isFixed" DataType="0x0005" AccessType="rw">
+    <Title>Fixed IP Address</Title>
+    <Option Value="0" />
+  </Object>
+  <Object Id="3288sub1" ParameterName="commDNS3_1:Value" DataType="0x0009" AccessType="rw">
+    <Title>DNS 1</Title>
+  </Object>
+  <Object Id="3289sub1" ParameterName="commDNS3_2:Value" DataType="0x0005" AccessType="rw">
+    <Title>DNS 2</Title>
+  </Object>
+  <Object Id="3299sub1" ParameterName="commDNS4_1:Value" DataType="0x0009" AccessType="rw">
+    <Title>Access point DNS 1</Title>
+  </Object>
+  <Object Id="3300sub1" ParameterName="commDNS4_2:Value" DataType="0x0005" AccessType="rw">
+    <Title>Access point DNS 2</Title>
+  </Object>
+  <Object Id="328A" ParameterName="wifiSSID" DataType="0x0009" AccessType="rw">
+    <Title>WiFi SSID</Title>
+  </Object>
+  <Object Id="328B" ParameterName="wifiPSK" DataType="0x0009" AccessType="rw">
+    <Title>WiFi PSK</Title>
+  </Object>
+  <Object Id="328C" ParameterName="wifiSecurity" DataType="0x0007" AccessType="rw">
+    <Title>WiFi Security</Title>
+    <Option Value="2097154">
+      <Title>WPA PSK security with TKIP</Title>
+    </Option>
+    <Option Value="2097156">
+      <Title>WPA PSK security with AES</Title>
+    </Option>
+    <Option Value="2097158">
+      <Title>WPA PSK security with AES &amp; TKIP</Title>
+    </Option>
+    <Option Value="6291462">
+      <Title>WPA2 WPA PSK Security with AES &amp; TKIP</Title>
+    </Option>
+    <Option Value="6291460">
+      <Title>WPA2 WPA PSK Security with AES</Title>
+    </Option>
+    <Option Value="4194308">
+      <Title>WPA2 PSK security with AES</Title>
+    </Option>
+    <Option Value="4194306">
+      <Title>WPA2 PSK security with TKIP</Title>
+    </Option>
+    <Option Value="4194310">
+      <Title>WPA2 PSK security with AES &amp; TKIP</Title>
+    </Option>
+    <Option Value="20971524">
+      <Title>WPA3 WPA2 PSK Security with AES</Title>
+    </Option>
+    <Option Value="16777220">
+      <Title>WPA3 PSK security with AES</Title>
+    </Option>
+  </Object>
+  <Object Id="328D" ParameterName="wifiRSSI" DataType="0x0002" AccessType="rw">
+    <Title>WiFi signal strength</Title>
+  </Object>
+  <Object Id="328E" ParameterName="wifiStatus" DataType="0x0005" AccessType="rw">
+    <Title>WiFi General Status</Title>
+    <Option Value="0">
+      <Title>Not initialized</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Running</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Disabled</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Error</Title>
+    </Option>
+  </Object>
+  <Object Id="328F" ParameterName="wifiHwAvailable" DataType="0x0005" AccessType="r">
+    <Title>WiFi Hardware available</Title>
+  </Object>
+  <Object Id="3291" ParameterName="softAPEnabled" DataType="0x0002" AccessType="rw">
+    <Title>Access Point starts after boot</Title>
+  </Object>
+  <Object Id="3292" ParameterName="softAPStart" DataType="0x0002" AccessType="rw">
+    <Title>Start Access Point</Title>
+  </Object>
+  <Object Id="3293" ParameterName="wifiStationStatus" DataType="0x0002" AccessType="r">
+    <Title>WiFi Station Status</Title>
+    <Option Value="0">
+      <Title>Not initialized</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Not configured</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Not connected</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Connected</Title>
+    </Option>
+  </Object>
+  <Object Id="3294" ParameterName="wifiAPStatus" DataType="0x0002" AccessType="rw">
+    <Title>Access Point Status</Title>
+    <Option Value="0">
+      <Title>Not initialized</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Disabled</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Enabled</Title>
+    </Option>
+  </Object>
+  <Object Id="3550" ParameterName="connectivityMode" DataType="0x0002" AccessType="r">
+    <Title>Active connectivity mode</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Wired</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Mobile</Title>
+    </Option>
+    <Option Value="3">
+      <Title>WiFi</Title>
+    </Option>
+  </Object>
+  <Object Id="2251sub2" ParameterName="tamperDetection" DataType="0x0002" AccessType="rw">
+    <Title>Tamper detection mode</Title>
+    <Option Value="0">
+      <Title>Disabled</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Strict</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Authorization</Title>
+    </Option>
+  </Object>
+  <Object Id="8400sub1" ParameterName="extensionBoardAssy" DataType="0x0002" AccessType="r">
+    <Title>Extension board assembly</Title>
+  </Object>
+  <Object Id="3553" ParameterName="activeNetworkProfile" DataType="0x0002" AccessType="r">
+    <Title>Active network profile</Title>
+    <Option Value="0">
+      <Title>None</Title>
+    </Option>
+    <Option Value="1">
+      <Title>Profile 1</Title>
+    </Option>
+    <Option Value="2">
+      <Title>Profile 2</Title>
+    </Option>
+    <Option Value="3">
+      <Title>Profile 3</Title>
+    </Option>
+    <Option Value="4">
+      <Title>Profile 4</Title>
+    </Option>
+  </Object>
+	<Object Id="217Bsub1" ParameterName="gridQuality.underVoltageDeviation" DataType="0x0006" AccessType="rw">
+		<Title>Under voltage deviation</Title>
+		<Units>mV</Units>
+	</Object>
+	<Object Id="217Bsub2" ParameterName="gridQuality.overVoltageDeviation" DataType="0x0006" AccessType="rw">
+		<Title>Over voltage deviation</Title>
+		<Units>mV</Units>
+	</Object>
+	<Object Id="217Bsub3" ParameterName="gridQuality.lowFrequencyDeviation" DataType="0x0006" AccessType="rw">
+		<Title>Low frequency deviation</Title>
+		<Units>mHz</Units>
+	</Object>
+	<Object Id="217Bsub4" ParameterName="gridQuality.highFrequencyDeviation" DataType="0x0006" AccessType="rw">
+		<Title>High frequency deviation</Title>
+		<Units>mHz</Units>
+	</Object>
+	<Object Id="217Bsub5" ParameterName="gridQuality.stableTime" DataType="0x0006" AccessType="rw">
+		<Title>Stable time</Title>
+		<Units>s</Units>
+	</Object>
+	<Object Id="217Bsub6" ParameterName="gridQuality.restartVoltageDeviation" DataType="0x0006" AccessType="rw">
+		<Title>Restart voltage deviation</Title>
+		<Units>mV</Units>
+	</Object>
+	<Object Id="217Bsub7" ParameterName="gridQuality.restartAfterTime" DataType="0x0006" AccessType="rw">
+		<Title>Restart after time</Title>
+		<Units>s</Units>
+	</Object>
+</CANopen>
+

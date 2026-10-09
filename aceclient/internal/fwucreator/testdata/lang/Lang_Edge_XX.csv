@@ -1,0 +1,11 @@
+﻿language :  xx_YY  
+DISP_CARD_ACCEPTED,  "Hello, world, with commas",  29, 160, 28
+5, "numeric id", 1, 2, 3
+  DISP_GOODBYE  ,"tab	quote""",+7, 08 , 65535
+DISP_ERROR, "Ünïcödé ñ € 漢字 \n newline", 29,160,28
+short,line
+-1, "empty id", 0,0,0
+DISP_ERROR, "a very long text that exceeds eighty characters in total length so that it gets truncated somewhere", 1,1,1
+
+DISP_CHARGING, "x", 300, 1, 1
+	DISP_TOTAL	,	"tabs"	,	1	,	2	,	3	

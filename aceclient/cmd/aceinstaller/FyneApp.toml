@@ -1,0 +1,6 @@
+[Details]
+  Icon = "../../internal/ui/assets/Icon.png"
+  Name = "ACE Service Installer"
+  ID = "io.github.aceclient.installer"
+  Version = "0.1.0"
+  Build = 1
