@@ -1,0 +1,9 @@
+namespace ICUNetwork;
+
+public enum EAuthorisationMethod
+{
+	AUTHORIZE_PLUG_AND_CHARGE,
+	AUTHORIZE_NFCREADER,
+	AUTHORIZE_CANBUS,
+	AUTHORIZE_BUTTON
+}

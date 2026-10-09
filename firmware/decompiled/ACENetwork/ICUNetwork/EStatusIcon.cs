@@ -1,0 +1,9 @@
+namespace ICUNetwork;
+
+public enum EStatusIcon
+{
+	STATUS_ICON_VALID,
+	STATUS_ICON_INFORMATION,
+	STATUS_ICON_WARNING,
+	STATUS_ICON_ERROR
+}

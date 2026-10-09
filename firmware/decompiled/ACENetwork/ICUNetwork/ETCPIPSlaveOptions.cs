@@ -1,0 +1,9 @@
+namespace ICUNetwork;
+
+public enum ETCPIPSlaveOptions
+{
+	TCPIPSLAVE_NONE,
+	TCPIPSLAVE_READ,
+	TCPIPSLAVE_WRITE,
+	TCPIPSLAVE_ALL
+}

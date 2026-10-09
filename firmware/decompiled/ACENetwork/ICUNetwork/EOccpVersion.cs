@@ -1,0 +1,15 @@
+using System;
+
+namespace ICUNetwork;
+
+[Flags]
+public enum EOccpVersion
+{
+	VERSION_NONE = 0,
+	VERSION_15 = 1,
+	VERSION_16 = 2,
+	VERSION_20 = 4,
+	VERSION_15_16 = VERSION_15 | VERSION_16,
+	VERSION_16_20 = VERSION_16 | VERSION_20,
+	VERSION_15_16_20 = VERSION_15_16 | VERSION_20
+}

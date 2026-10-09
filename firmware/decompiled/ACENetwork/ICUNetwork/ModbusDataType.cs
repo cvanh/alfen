@@ -1,0 +1,13 @@
+namespace ICUNetwork;
+
+public enum ModbusDataType
+{
+	SIGNED16,
+	UNSIGNED16,
+	SIGNED32,
+	UNSIGNED32,
+	SIGNED64,
+	UNSIGNED64,
+	FLOAT32,
+	FLOAT64
+}

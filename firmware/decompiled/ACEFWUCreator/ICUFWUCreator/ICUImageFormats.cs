@@ -1,0 +1,15 @@
+namespace ICUFWUCreator;
+
+public enum ICUImageFormats
+{
+	FORMAT_L1 = 1,
+	FORMAT_L2 = 17,
+	FORMAT_L4 = 2,
+	FORMAT_L8 = 3,
+	RGB332 = 4,
+	RGB565 = 7,
+	PALETTED = 8,
+	PALETTED565 = 14,
+	PALETTED4444 = 15,
+	PALETTED8 = 16
+}

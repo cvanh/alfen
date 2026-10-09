@@ -1,0 +1,8 @@
+namespace ICUNetwork;
+
+public enum EAUXBoardStates
+{
+	BOARD_NOT_CONNECTED,
+	BOARD_CONNECTED,
+	BOARD_COMMUNICATION
+}

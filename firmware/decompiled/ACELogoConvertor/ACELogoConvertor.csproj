@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ACELogoConvertor</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net481</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.12/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.12/WindowsBase.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

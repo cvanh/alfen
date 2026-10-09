@@ -1,0 +1,9 @@
+namespace ICUNetwork;
+
+public enum ETCPIPSlaveMode
+{
+	BALANCEMODE_NONE,
+	BALANCEMODE_SCN,
+	BALANCEMODE_SOCKET,
+	BALANCEMODE_BOTH
+}

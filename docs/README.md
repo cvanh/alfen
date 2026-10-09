@@ -24,7 +24,8 @@ owned hardware.
 | [`03-ace-installer-analysis.md`](03-ace-installer-analysis.md) | MSI extraction, .NET assemblies, the 3 crypto subsystems + keys, firmware-upload path |
 | [`04-conclusions-next-steps.md`](04-conclusions-next-steps.md) | Summary verdict, what's achievable, device-side route |
 | [`05-udp-and-settings-protocol.md`](05-udp-and-settings-protocol.md) | UDP SCN discovery protocol (port 36549, packet struct) + HTTPS settings/object-dictionary channel |
-| [`decompiled/`](decompiled/) | C# decompiled reference sources for the key assemblies |
+| [`06-go-port-gui-plan.md`](06-go-port-gui-plan.md) | Phased plan for porting the full installer + a cross-platform (Fyne) GUI onto the Go `aceclient` backend |
+| [`../firmware/decompiled/`](../firmware/decompiled/) | C# decompiled reference sources (incl. full `ACEServiceInstaller.exe` project) |
 | [`../aceclient/`](../aceclient/) | Go reimplementation of the ACE tool's charger surface (formats, SCN UDP, HTTPS settings, parallel key sweep); ports the decompiled sources 1:1 and validates against the real firmware |
 
 ## One-paragraph summary

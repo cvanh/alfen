@@ -1,0 +1,16 @@
+namespace ICUNetwork;
+
+public enum EOccpPhase
+{
+	PHASE_NONE,
+	PHASE_L1,
+	PHASE_L2,
+	PHASE_L3,
+	PHASE_N,
+	PHASE_L1N,
+	PHASE_L2N,
+	PHASE_L3N,
+	PHASE_L1L2,
+	PHASE_L2L3,
+	PHASE_L3L1
+}
