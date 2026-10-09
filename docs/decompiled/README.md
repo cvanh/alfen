@@ -37,5 +37,5 @@ the written analysis.
 
 - `ACE Service Installer v4.4.1_434.msi` → OLE2 → embedded CAB → 55 files.
 - Full extracted file set (assemblies, configs, resources) lives under
-  `msi_work/files3/` in this workspace; only the decompiled sources relevant to
+  `firmware/msi_work/files3/` in this workspace; only the decompiled sources relevant to
   the analysis are committed here.

@@ -21,7 +21,7 @@ Layout: **160-byte (`0xA0`) header + AES-encrypted payload**.
 
 | Offset | Size | Field | Notes |
 |--------|------|-------|-------|
-| `0x00` | 4 | CRC32 | Over bytes `0x04..EOF`. Poly `0xEDB88320` (standard reversed CRC-32). Confirmed: installer uses `new Crc32(3988292384u)`. |
+| `0x00` | 4 | CRC32 | Over the **160-byte header only** (`0x04..0xA0`), *not* the payload. Poly `0xEDB88320` (standard reversed CRC-32); installer uses `new Crc32(3988292384u)`. Verified empirically against 5.6.1 / 6.6.2 / 7.1.6 / 7.4.6 (all pass) by `aceclient fwi-info`. *(Correction: earlier revisions of this note said `0x04..EOF`, which does not match.)* |
 | `0x04` | 4 | Header length | Always `0x000000A0` (160). |
 | `0x08` | 2 | Type | `0x13` (19) for 4.12.0 / 5.6.1 / 6.6.2; `0x21` (33) for 7.x. |
 | `0x0A` | 2 | Magic | `0xA1FE` constant. |

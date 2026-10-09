@@ -25,6 +25,7 @@ owned hardware.
 | [`04-conclusions-next-steps.md`](04-conclusions-next-steps.md) | Summary verdict, what's achievable, device-side route |
 | [`05-udp-and-settings-protocol.md`](05-udp-and-settings-protocol.md) | UDP SCN discovery protocol (port 36549, packet struct) + HTTPS settings/object-dictionary channel |
 | [`decompiled/`](decompiled/) | C# decompiled reference sources for the key assemblies |
+| [`../aceclient/`](../aceclient/) | Go reimplementation of the ACE tool's charger surface (formats, SCN UDP, HTTPS settings, parallel key sweep); ports the decompiled sources 1:1 and validates against the real firmware |
 
 ## One-paragraph summary
 
@@ -41,6 +42,6 @@ decrypts them internally.
 
 ## Source artefacts referenced
 
-- `Firmware/NG9xx *.fwi` — controller images (4.12.0, 5.6.1-A/B, 6.6.2-BL-A/B, 7.1.6, 7.3.0, 7.4.6)
-- `Firmware/AHP_release_FW_2.*.tfw` — AHP application releases (2.0.0–2.7.0)
-- `ACE Service Installer v4.4.1_434.msi` — deployment tool (WiX/.NET)
+- `firmware/Firmware/NG9xx *.fwi` — controller images (4.12.0, 5.6.1-A/B, 6.6.2-BL-A/B, 7.1.6, 7.3.0, 7.4.6)
+- `firmware/Firmware/AHP_release_FW_2.*.tfw` — AHP application releases (2.0.0–2.7.0)
+- `firmware/ACE Service Installer v4.4.1_434.msi` — deployment tool (WiX/.NET)
